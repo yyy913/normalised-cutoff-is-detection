@@ -1,0 +1,296 @@
+{
+ "T_crit": 15414.940825367981,
+ "identity": [
+  {
+   "tag": "CM_pacbio",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 5.5254529391317835,
+   "n_spot": 4741,
+   "n_cu": 1204
+  },
+  {
+   "tag": "CP_pacbio",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 4.787888489464497,
+   "n_spot": 3983,
+   "n_cu": 1411
+  },
+  {
+   "tag": "HNC_ilong_nano",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 5.17297292060993,
+   "n_spot": 1028,
+   "n_cu": 755
+  },
+  {
+   "tag": "BCC_nano",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 4.114816309650305,
+   "n_spot": 1314,
+   "n_cu": 7240
+  },
+  {
+   "tag": "SCC_nano",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 3.4857091534143234,
+   "n_spot": 1464,
+   "n_cu": 6369
+  },
+  {
+   "tag": "Melanoma",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 4.502979245091544,
+   "n_spot": 623,
+   "n_cu": 1002
+  },
+  {
+   "tag": "BCC",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 4.261694461116089,
+   "n_spot": 1314,
+   "n_cu": 3759
+  },
+  {
+   "tag": "KidneyCancer",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 4.459798521408135,
+   "n_spot": 1762,
+   "n_cu": 5506
+  },
+  {
+   "tag": "HNC",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 3.9516361062654886,
+   "n_spot": 1090,
+   "n_cu": 3723
+  },
+  {
+   "tag": "SCC",
+   "identical": true,
+   "n_mismatch": 0,
+   "min_nonzero_lognorm": 3.307464903999448,
+   "n_spot": 1473,
+   "n_cu": 5322
+  }
+ ],
+ "ari": [
+  {
+   "tag": "CM_pacbio",
+   "ari_dq_sub": 0.7053213135685679,
+   "ari_rank_sub": 0.016685730539286056,
+   "ari_dq_full": 0.7053213135685679,
+   "sp_sub": 0.9950931918533217,
+   "sp_full": 0.9950931918533217,
+   "inert_ub": 5.5254529391317835,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "CP_pacbio",
+   "ari_dq_sub": 0.7891629703067395,
+   "ari_rank_sub": 0.01661722081593908,
+   "ari_dq_full": 0.7891629703067395,
+   "sp_sub": 0.9995477715292684,
+   "sp_full": 0.9995477715292684,
+   "inert_ub": 4.787888489464497,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "HNC_ilong_nano",
+   "ari_dq_sub": 0.099583597458309,
+   "ari_rank_sub": 0.10373144793262155,
+   "ari_dq_full": 0.099583597458309,
+   "sp_sub": 0.944267094049925,
+   "sp_full": 0.944267094049925,
+   "inert_ub": 5.17297292060993,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "BCC_nano",
+   "ari_dq_sub": 0.16640232836135158,
+   "ari_rank_sub": 0.1679111032426985,
+   "ari_dq_full": 0.16640232836135158,
+   "sp_sub": 0.9912715158577285,
+   "sp_full": 0.9912715158577285,
+   "inert_ub": 4.114816309650305,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "SCC_nano",
+   "ari_dq_sub": 0.21395858687562727,
+   "ari_rank_sub": 0.2151588661502273,
+   "ari_dq_full": 0.21395858687562727,
+   "sp_sub": 0.993278378369386,
+   "sp_full": 0.993278378369386,
+   "inert_ub": 3.4857091534143234,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "Melanoma",
+   "ari_dq_sub": 0.08209667039308913,
+   "ari_rank_sub": 0.0870191640184481,
+   "ari_dq_full": 0.07110327337516938,
+   "sp_sub": 0.9860688013168233,
+   "sp_full": 0.8818984539792734,
+   "inert_ub": 4.502979245091544,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 100.0
+  },
+  {
+   "tag": "BCC",
+   "ari_dq_sub": 0.08404465821580369,
+   "ari_rank_sub": 0.08542084876390431,
+   "ari_dq_full": 0.07722731569365433,
+   "sp_sub": 0.9974496587835053,
+   "sp_full": 0.9386463401235212,
+   "inert_ub": 4.261694461116089,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 97.1841704718417
+  },
+  {
+   "tag": "KidneyCancer",
+   "ari_dq_sub": 0.054511069474951095,
+   "ari_rank_sub": 0.05390554181751339,
+   "ari_dq_full": 0.04502372220886518,
+   "sp_sub": 0.9964408767650716,
+   "sp_full": 0.9041841087014341,
+   "inert_ub": 4.459798521408135,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 94.15437003405222
+  },
+  {
+   "tag": "HNC",
+   "ari_dq_sub": 0.17068358942228715,
+   "ari_rank_sub": 0.17313554391094024,
+   "ari_dq_full": 0.15955345150974973,
+   "sp_sub": 0.993400957667391,
+   "sp_full": 0.9535331929641577,
+   "inert_ub": 3.9516361062654886,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 69.35779816513762
+  },
+  {
+   "tag": "SCC",
+   "ari_dq_sub": 0.1607437495543033,
+   "ari_rank_sub": 0.1524979121648832,
+   "ari_dq_full": 0.10252290642325333,
+   "sp_sub": 0.9979298183178279,
+   "sp_full": 0.9380985226556333,
+   "inert_ub": 3.307464903999448,
+   "pct_T_sub": 100.0,
+   "pct_T_full": 74.74541751527495
+  }
+ ],
+ "c4": [
+  {
+   "tag": "Melanoma",
+   "n_pc": 8099,
+   "pc10": 192,
+   "pc_ret_pct": 2.3706630448203483,
+   "cu10": 5,
+   "n_cu": 1002,
+   "cu_ret_pct": 0.499001996007984
+  },
+  {
+   "tag": "BCC",
+   "n_pc": 14735,
+   "pc10": 5197,
+   "pc_ret_pct": 35.269765863590095,
+   "cu10": 5,
+   "n_cu": 3759,
+   "cu_ret_pct": 0.13301409949454643
+  },
+  {
+   "tag": "KidneyCancer",
+   "n_pc": 14530,
+   "pc10": 7592,
+   "pc_ret_pct": 52.25051617343427,
+   "cu10": 7,
+   "n_cu": 5506,
+   "cu_ret_pct": 0.12713403559752998
+  },
+  {
+   "tag": "HNC",
+   "n_pc": 13850,
+   "pc10": 7742,
+   "pc_ret_pct": 55.898916967509024,
+   "cu10": 26,
+   "n_cu": 3723,
+   "cu_ret_pct": 0.6983615363953801
+  },
+  {
+   "tag": "SCC",
+   "n_pc": 14562,
+   "pc10": 6570,
+   "pc_ret_pct": 45.11742892459827,
+   "cu10": 18,
+   "n_cu": 5322,
+   "cu_ret_pct": 0.3382187147688839
+  }
+ ],
+ "c5": [
+  {
+   "pair": "Melanoma",
+   "n": 63,
+   "rho": 0.2214861751152074,
+   "ci": [
+    -0.06249639976958525,
+    0.4570036482334868
+   ],
+   "rho_with_dups": 0.2620812023797099
+  },
+  {
+   "pair": "BCC",
+   "n": 196,
+   "rho": -0.015118456597789447,
+   "ci": [
+    -0.18161081847811364,
+    0.1061697838057516
+   ],
+   "rho_with_dups": -0.02757913930921401
+  },
+  {
+   "pair": "KidneyCancer",
+   "n": 290,
+   "rho": 0.09934030951206521,
+   "ci": [
+    -0.01591716413045216,
+    0.21492381515873532
+   ],
+   "rho_with_dups": 0.08890719218673315
+  },
+  {
+   "pair": "HNC",
+   "n": 187,
+   "rho": 0.148578318205675,
+   "ci": [
+    0.017692799650589633,
+    0.30101602442936365
+   ],
+   "rho_with_dups": 0.15825769589366398
+  },
+  {
+   "pair": "SCC",
+   "n": 252,
+   "rho": 0.08632138114209828,
+   "ci": [
+    -0.03988011814964873,
+    0.2058762315691121
+   ],
+   "rho_with_dups": 0.10700128481891875
+  }
+ ]
+}

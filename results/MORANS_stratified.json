@@ -1,0 +1,52 @@
+[
+ {
+  "tag": "SCC",
+  "n_cu": 78,
+  "n_pc": 9575,
+  "pairs": 390,
+  "sig_plain": 390,
+  "sig_strat": 388,
+  "pct_plain": 100.0,
+  "pct_strat": 99.5
+ },
+ {
+  "tag": "HNC",
+  "n_cu": 71,
+  "n_pc": 10271,
+  "pairs": 355,
+  "sig_plain": 355,
+  "sig_strat": 353,
+  "pct_plain": 100.0,
+  "pct_strat": 99.4
+ },
+ {
+  "tag": "KidneyCancer",
+  "n_cu": 29,
+  "n_pc": 10713,
+  "pairs": 145,
+  "sig_plain": 145,
+  "sig_strat": 145,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0
+ },
+ {
+  "tag": "BCC",
+  "n_cu": 16,
+  "n_pc": 8828,
+  "pairs": 80,
+  "sig_plain": 80,
+  "sig_strat": 80,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0
+ },
+ {
+  "tag": "Melanoma",
+  "n_cu": 14,
+  "n_pc": 467,
+  "pairs": 70,
+  "sig_plain": 70,
+  "sig_strat": 70,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0
+ }
+]

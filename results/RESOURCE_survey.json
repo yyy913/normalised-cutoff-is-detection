@@ -1,0 +1,952 @@
+{
+ "matrices": [
+  {
+   "tag": "CM_pacbio",
+   "path": "data\\SPanC-Lnc-CRC\\CM_pacbio.h5ad",
+   "note": "CRC 原发/转移，长读 cuTAR-only",
+   "n_spot": 4741,
+   "n_feat": 1204,
+   "n_cuTAR": 1204,
+   "pct_cuTAR": 100.0,
+   "total_reads": 8400,
+   "density_pct": 0.139,
+   "median_reads_per_spot": 0.0,
+   "pct_spot_ge1read": 15.25,
+   "median_genes_per_spot": 0.0,
+   "feat_det_median": 4,
+   "feat_det_max": 200,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 10,
+   "n_feat_ge1pct_cu": 10,
+   "n_feat_ge5pct_all": 0,
+   "n_feat_ge5pct_cu": 0,
+   "n_feat_ge10pct_all": 0,
+   "n_feat_ge10pct_cu": 0,
+   "n_feat_ge20pct_all": 0,
+   "n_feat_ge20pct_cu": 0,
+   "best_cu_detect_pct": 4.22,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 0.1,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 0.5,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 1.0,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 2.0,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 3.0,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 4.0,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 5.0,
+     "elems": 7934,
+     "spots": 723
+    },
+    {
+     "thr": 6.0,
+     "elems": 7582,
+     "spots": 721
+    }
+   ],
+   "mask_elems_05": 7934,
+   "spots_any_05": 723,
+   "spearman_maskcount_vs_depth": 0.9951,
+   "ari_naive_vs_depthdecile": 0.7053
+  },
+  {
+   "tag": "CP_pacbio",
+   "path": "data\\SPanC-Lnc-CRC\\CP_pacbio.h5ad",
+   "note": "CRC 配对，长读 cuTAR-only",
+   "n_spot": 3983,
+   "n_feat": 1411,
+   "n_cuTAR": 1411,
+   "pct_cuTAR": 100.0,
+   "total_reads": 9566,
+   "density_pct": 0.1607,
+   "median_reads_per_spot": 0.0,
+   "pct_spot_ge1read": 12.4,
+   "median_genes_per_spot": 0.0,
+   "feat_det_median": 4,
+   "feat_det_max": 135,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 19,
+   "n_feat_ge1pct_cu": 19,
+   "n_feat_ge5pct_all": 0,
+   "n_feat_ge5pct_cu": 0,
+   "n_feat_ge10pct_all": 0,
+   "n_feat_ge10pct_cu": 0,
+   "n_feat_ge20pct_all": 0,
+   "n_feat_ge20pct_cu": 0,
+   "best_cu_detect_pct": 3.39,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 0.1,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 0.5,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 1.0,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 2.0,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 3.0,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 4.0,
+     "elems": 9032,
+     "spots": 494
+    },
+    {
+     "thr": 5.0,
+     "elems": 8964,
+     "spots": 494
+    },
+    {
+     "thr": 6.0,
+     "elems": 4497,
+     "spots": 469
+    }
+   ],
+   "mask_elems_05": 9032,
+   "spots_any_05": 494,
+   "spearman_maskcount_vs_depth": 0.9995,
+   "ari_naive_vs_depthdecile": 0.7892
+  },
+  {
+   "tag": "BCC_nano",
+   "path": "data\\SPanC-Lnc-pan\\BCC_nano.h5ad",
+   "note": "纳米孔 cuTAR-only",
+   "n_spot": 1314,
+   "n_feat": 7240,
+   "n_cuTAR": 7240,
+   "pct_cuTAR": 100.0,
+   "total_reads": 40982,
+   "density_pct": 0.3197,
+   "median_reads_per_spot": 22.0,
+   "pct_spot_ge1read": 95.05,
+   "median_genes_per_spot": 17.0,
+   "feat_det_median": 1,
+   "feat_det_max": 760,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 344,
+   "n_feat_ge1pct_cu": 344,
+   "n_feat_ge5pct_all": 51,
+   "n_feat_ge5pct_cu": 51,
+   "n_feat_ge10pct_all": 28,
+   "n_feat_ge10pct_cu": 28,
+   "n_feat_ge20pct_all": 11,
+   "n_feat_ge20pct_cu": 11,
+   "best_cu_detect_pct": 57.84,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 0.1,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 0.5,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 1.0,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 2.0,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 3.0,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 4.0,
+     "elems": 30410,
+     "spots": 1249
+    },
+    {
+     "thr": 5.0,
+     "elems": 21419,
+     "spots": 1249
+    },
+    {
+     "thr": 6.0,
+     "elems": 7601,
+     "spots": 1226
+    }
+   ],
+   "mask_elems_05": 30410,
+   "spots_any_05": 1249,
+   "spearman_maskcount_vs_depth": 0.9913,
+   "ari_naive_vs_depthdecile": 0.1664
+  },
+  {
+   "tag": "SCC_nano",
+   "path": "data\\SPanC-Lnc-pan\\SCC_nano.h5ad",
+   "note": "纳米孔 cuTAR-only",
+   "n_spot": 1464,
+   "n_feat": 6369,
+   "n_cuTAR": 6369,
+   "pct_cuTAR": 100.0,
+   "total_reads": 76754,
+   "density_pct": 0.5285,
+   "median_reads_per_spot": 35.0,
+   "pct_spot_ge1read": 96.11,
+   "median_genes_per_spot": 26.0,
+   "feat_det_median": 2,
+   "feat_det_max": 952,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 527,
+   "n_feat_ge1pct_cu": 527,
+   "n_feat_ge5pct_all": 84,
+   "n_feat_ge5pct_cu": 84,
+   "n_feat_ge10pct_all": 43,
+   "n_feat_ge10pct_cu": 43,
+   "n_feat_ge20pct_all": 24,
+   "n_feat_ge20pct_cu": 24,
+   "best_cu_detect_pct": 65.03,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 0.1,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 0.5,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 1.0,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 2.0,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 3.0,
+     "elems": 49282,
+     "spots": 1407
+    },
+    {
+     "thr": 4.0,
+     "elems": 46346,
+     "spots": 1407
+    },
+    {
+     "thr": 5.0,
+     "elems": 21880,
+     "spots": 1407
+    },
+    {
+     "thr": 6.0,
+     "elems": 7289,
+     "spots": 1394
+    }
+   ],
+   "mask_elems_05": 49282,
+   "spots_any_05": 1407,
+   "spearman_maskcount_vs_depth": 0.9933,
+   "ari_naive_vs_depthdecile": 0.214
+  },
+  {
+   "tag": "HNC_ilong_nano",
+   "path": "data\\SPanC-Lnc-pan\\HNC_ilong_nano.h5ad",
+   "note": "纳米孔 cuTAR-only",
+   "n_spot": 1028,
+   "n_feat": 755,
+   "n_cuTAR": 755,
+   "pct_cuTAR": 100.0,
+   "total_reads": 17614,
+   "density_pct": 1.4697,
+   "median_reads_per_spot": 17.0,
+   "pct_spot_ge1read": 93.97,
+   "median_genes_per_spot": 11.0,
+   "feat_det_median": 5,
+   "feat_det_max": 861,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 183,
+   "n_feat_ge1pct_cu": 183,
+   "n_feat_ge5pct_all": 32,
+   "n_feat_ge5pct_cu": 32,
+   "n_feat_ge10pct_all": 18,
+   "n_feat_ge10pct_cu": 18,
+   "n_feat_ge20pct_all": 8,
+   "n_feat_ge20pct_cu": 8,
+   "best_cu_detect_pct": 83.75,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 0.1,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 0.5,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 1.0,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 2.0,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 3.0,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 4.0,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 5.0,
+     "elems": 11407,
+     "spots": 966
+    },
+    {
+     "thr": 6.0,
+     "elems": 7619,
+     "spots": 966
+    }
+   ],
+   "mask_elems_05": 11407,
+   "spots_any_05": 966,
+   "spearman_maskcount_vs_depth": 0.9443,
+   "ari_naive_vs_depthdecile": 0.0996
+  },
+  {
+   "tag": "BCC",
+   "path": "data\\SPanC-Lnc-pan\\BCC.h5ad",
+   "note": "混合（cuTAR + 编码）",
+   "n_spot": 1314,
+   "n_feat": 22072,
+   "n_cuTAR": 3759,
+   "pct_cuTAR": 17.03,
+   "total_reads": 5126045,
+   "density_pct": 7.5752,
+   "median_reads_per_spot": 2548.5,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 1440.0,
+   "feat_det_median": 36,
+   "feat_det_max": 1294,
+   "pct_spot_below_Tcrit": 97.18,
+   "n_feat_ge1pct_all": 13820,
+   "n_feat_ge1pct_cu": 359,
+   "n_feat_ge1pct_coding": 13461,
+   "n_feat_ge5pct_all": 8844,
+   "n_feat_ge5pct_cu": 16,
+   "n_feat_ge5pct_coding": 8828,
+   "n_feat_ge10pct_all": 5404,
+   "n_feat_ge10pct_cu": 5,
+   "n_feat_ge10pct_coding": 5399,
+   "n_feat_ge20pct_all": 2235,
+   "n_feat_ge20pct_cu": 1,
+   "n_feat_ge20pct_coding": 2234,
+   "best_cu_detect_pct": 25.8,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 0.1,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 0.5,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 1.0,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 2.0,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 3.0,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 4.0,
+     "elems": 24637,
+     "spots": 1256
+    },
+    {
+     "thr": 5.0,
+     "elems": 22313,
+     "spots": 1255
+    },
+    {
+     "thr": 6.0,
+     "elems": 8369,
+     "spots": 1153
+    }
+   ],
+   "mask_elems_05": 24637,
+   "spots_any_05": 1256,
+   "spearman_maskcount_vs_depth": 0.9386,
+   "ari_naive_vs_depthdecile": 0.0772
+  },
+  {
+   "tag": "SCC",
+   "path": "data\\SPanC-Lnc-pan\\SCC.h5ad",
+   "note": "混合（cuTAR + 编码）",
+   "n_spot": 1473,
+   "n_feat": 23729,
+   "n_cuTAR": 5322,
+   "pct_cuTAR": 22.43,
+   "total_reads": 13234549,
+   "density_pct": 9.3752,
+   "median_reads_per_spot": 5493.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 2030.0,
+   "feat_det_median": 35,
+   "feat_det_max": 1464,
+   "pct_spot_below_Tcrit": 74.75,
+   "n_feat_ge1pct_all": 14368,
+   "n_feat_ge1pct_cu": 738,
+   "n_feat_ge1pct_coding": 13630,
+   "n_feat_ge5pct_all": 9653,
+   "n_feat_ge5pct_cu": 78,
+   "n_feat_ge5pct_coding": 9575,
+   "n_feat_ge10pct_all": 6867,
+   "n_feat_ge10pct_cu": 18,
+   "n_feat_ge10pct_coding": 6849,
+   "n_feat_ge20pct_all": 3740,
+   "n_feat_ge20pct_cu": 5,
+   "n_feat_ge20pct_coding": 3735,
+   "best_cu_detect_pct": 41.89,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 0.1,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 0.5,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 1.0,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 2.0,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 3.0,
+     "elems": 52217,
+     "spots": 1389
+    },
+    {
+     "thr": 4.0,
+     "elems": 47070,
+     "spots": 1389
+    },
+    {
+     "thr": 5.0,
+     "elems": 22826,
+     "spots": 1389
+    },
+    {
+     "thr": 6.0,
+     "elems": 6340,
+     "spots": 1255
+    }
+   ],
+   "mask_elems_05": 52217,
+   "spots_any_05": 1389,
+   "spearman_maskcount_vs_depth": 0.9381,
+   "ari_naive_vs_depthdecile": 0.1025
+  },
+  {
+   "tag": "HNC",
+   "path": "data\\SPanC-Lnc-pan\\HNC.h5ad",
+   "note": "混合（cuTAR + 编码）",
+   "n_spot": 1090,
+   "n_feat": 21262,
+   "n_cuTAR": 3723,
+   "pct_cuTAR": 17.51,
+   "total_reads": 12698036,
+   "density_pct": 13.9644,
+   "median_reads_per_spot": 11386.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 3338.0,
+   "feat_det_median": 49,
+   "feat_det_max": 1090,
+   "pct_spot_below_Tcrit": 69.36,
+   "n_feat_ge1pct_all": 14434,
+   "n_feat_ge1pct_cu": 723,
+   "n_feat_ge1pct_coding": 13711,
+   "n_feat_ge5pct_all": 10342,
+   "n_feat_ge5pct_cu": 71,
+   "n_feat_ge5pct_coding": 10271,
+   "n_feat_ge10pct_all": 8175,
+   "n_feat_ge10pct_cu": 26,
+   "n_feat_ge10pct_coding": 8149,
+   "n_feat_ge20pct_all": 5168,
+   "n_feat_ge20pct_cu": 10,
+   "n_feat_ge20pct_coding": 5158,
+   "best_cu_detect_pct": 61.1,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 0.1,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 0.5,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 1.0,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 2.0,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 3.0,
+     "elems": 34697,
+     "spots": 1058
+    },
+    {
+     "thr": 4.0,
+     "elems": 34562,
+     "spots": 1058
+    },
+    {
+     "thr": 5.0,
+     "elems": 26956,
+     "spots": 1058
+    },
+    {
+     "thr": 6.0,
+     "elems": 4703,
+     "spots": 986
+    }
+   ],
+   "mask_elems_05": 34697,
+   "spots_any_05": 1058,
+   "spearman_maskcount_vs_depth": 0.9535,
+   "ari_naive_vs_depthdecile": 0.1596
+  },
+  {
+   "tag": "KidneyCancer",
+   "path": "data\\SPanC-Lnc-pan\\KidneyCancer.h5ad",
+   "note": "混合（本体注释指向 Kidney Cancer）",
+   "n_spot": 1762,
+   "n_feat": 24183,
+   "n_cuTAR": 5506,
+   "pct_cuTAR": 22.77,
+   "total_reads": 10594640,
+   "density_pct": 10.1002,
+   "median_reads_per_spot": 4710.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 2318.0,
+   "feat_det_median": 55,
+   "feat_det_max": 1756,
+   "pct_spot_below_Tcrit": 94.15,
+   "n_feat_ge1pct_all": 14952,
+   "n_feat_ge1pct_cu": 491,
+   "n_feat_ge1pct_coding": 14461,
+   "n_feat_ge5pct_all": 10742,
+   "n_feat_ge5pct_cu": 29,
+   "n_feat_ge5pct_coding": 10713,
+   "n_feat_ge10pct_all": 7906,
+   "n_feat_ge10pct_cu": 7,
+   "n_feat_ge10pct_coding": 7899,
+   "n_feat_ge20pct_all": 4149,
+   "n_feat_ge20pct_cu": 3,
+   "n_feat_ge20pct_coding": 4146,
+   "best_cu_detect_pct": 40.81,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 0.1,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 0.5,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 1.0,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 2.0,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 3.0,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 4.0,
+     "elems": 49495,
+     "spots": 1745
+    },
+    {
+     "thr": 5.0,
+     "elems": 42874,
+     "spots": 1745
+    },
+    {
+     "thr": 6.0,
+     "elems": 11179,
+     "spots": 1483
+    }
+   ],
+   "mask_elems_05": 49495,
+   "spots_any_05": 1745,
+   "spearman_maskcount_vs_depth": 0.9042,
+   "ari_naive_vs_depthdecile": 0.045
+  },
+  {
+   "tag": "Melanoma",
+   "path": "data\\SPanC-Lnc-pan\\Melanoma.h5ad",
+   "note": "混合",
+   "n_spot": 623,
+   "n_feat": 9531,
+   "n_cuTAR": 1002,
+   "pct_cuTAR": 10.51,
+   "total_reads": 152342,
+   "density_pct": 1.911,
+   "median_reads_per_spot": 93.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 80.0,
+   "feat_det_median": 7,
+   "feat_det_max": 443,
+   "pct_spot_below_Tcrit": 100.0,
+   "n_feat_ge1pct_all": 4890,
+   "n_feat_ge1pct_cu": 346,
+   "n_feat_ge1pct_coding": 4544,
+   "n_feat_ge5pct_all": 481,
+   "n_feat_ge5pct_cu": 14,
+   "n_feat_ge5pct_coding": 467,
+   "n_feat_ge10pct_all": 221,
+   "n_feat_ge10pct_cu": 5,
+   "n_feat_ge10pct_coding": 216,
+   "n_feat_ge20pct_all": 85,
+   "n_feat_ge20pct_cu": 1,
+   "n_feat_ge20pct_coding": 84,
+   "best_cu_detect_pct": 46.55,
+   "threshold_scan": [
+    {
+     "thr": 0.01,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 0.1,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 0.5,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 1.0,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 2.0,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 3.0,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 4.0,
+     "elems": 7326,
+     "spots": 597
+    },
+    {
+     "thr": 5.0,
+     "elems": 5957,
+     "spots": 597
+    },
+    {
+     "thr": 6.0,
+     "elems": 2985,
+     "spots": 595
+    }
+   ],
+   "mask_elems_05": 7326,
+   "spots_any_05": 597,
+   "spearman_maskcount_vs_depth": 0.8819,
+   "ari_naive_vs_depthdecile": 0.0711
+  },
+  {
+   "tag": "GSE225857_C1",
+   "path": "data\\GSE225857\\h5ad\\GSM7058756_C1.h5ad",
+   "note": "外部对照：Visium 正常矩阵",
+   "n_spot": 2054,
+   "n_feat": 16667,
+   "n_cuTAR": 0,
+   "pct_cuTAR": 0.0,
+   "total_reads": 73606277,
+   "density_pct": 40.0302,
+   "median_reads_per_spot": 25063.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 6825.0,
+   "feat_det_median": 822,
+   "feat_det_max": 2054,
+   "pct_spot_below_Tcrit": 30.28,
+   "n_feat_ge1pct_all": 14348,
+   "n_feat_ge1pct_cu": 0,
+   "n_feat_ge1pct_coding": 14348,
+   "n_feat_ge5pct_all": 12722,
+   "n_feat_ge5pct_cu": 0,
+   "n_feat_ge5pct_coding": 12722,
+   "n_feat_ge10pct_all": 11817,
+   "n_feat_ge10pct_cu": 0,
+   "n_feat_ge10pct_coding": 11817,
+   "n_feat_ge20pct_all": 10575,
+   "n_feat_ge20pct_cu": 0,
+   "n_feat_ge20pct_coding": 10575,
+   "best_cu_detect_pct": null
+  },
+  {
+   "tag": "GSE225857_L1",
+   "path": "data\\GSE225857\\h5ad\\GSM7058760_L1.h5ad",
+   "note": "外部对照：Visium 正常矩阵",
+   "n_spot": 4669,
+   "n_feat": 17331,
+   "n_cuTAR": 0,
+   "pct_cuTAR": 0.0,
+   "total_reads": 28184389,
+   "density_pct": 15.8594,
+   "median_reads_per_spot": 3942.0,
+   "pct_spot_ge1read": 100.0,
+   "median_genes_per_spot": 2290.0,
+   "feat_det_median": 468,
+   "feat_det_max": 4669,
+   "pct_spot_below_Tcrit": 94.52,
+   "n_feat_ge1pct_all": 13219,
+   "n_feat_ge1pct_cu": 0,
+   "n_feat_ge1pct_coding": 13219,
+   "n_feat_ge5pct_all": 10775,
+   "n_feat_ge5pct_cu": 0,
+   "n_feat_ge5pct_coding": 10775,
+   "n_feat_ge10pct_all": 8678,
+   "n_feat_ge10pct_cu": 0,
+   "n_feat_ge10pct_coding": 8678,
+   "n_feat_ge20pct_all": 5247,
+   "n_feat_ge20pct_cu": 0,
+   "n_feat_ge20pct_coding": 5247,
+   "best_cu_detect_pct": null
+  }
+ ],
+ "ladder": [
+  {
+   "tag": "SCC",
+   "frac": 0.75,
+   "naive_jaccard": 0.7708,
+   "corrected_ari": "0.3922",
+   "reference_ari": "0.8806",
+   "pct_spots_any": 92.94
+  },
+  {
+   "tag": "SCC",
+   "frac": 0.5,
+   "naive_jaccard": 0.5385,
+   "corrected_ari": "0.3997",
+   "reference_ari": "0.7819",
+   "pct_spots_any": 90.29
+  },
+  {
+   "tag": "SCC",
+   "frac": 0.35,
+   "naive_jaccard": 0.3833,
+   "corrected_ari": "0.1767",
+   "reference_ari": "0.6408",
+   "pct_spots_any": 87.03
+  },
+  {
+   "tag": "SCC",
+   "frac": 0.25,
+   "naive_jaccard": 0.2803,
+   "corrected_ari": "0.1842",
+   "reference_ari": "0.5786",
+   "pct_spots_any": 82.76
+  },
+  {
+   "tag": "SCC",
+   "frac": 0.15,
+   "naive_jaccard": 0.1731,
+   "corrected_ari": "0.1197",
+   "reference_ari": "0.5166",
+   "pct_spots_any": 77.12
+  },
+  {
+   "tag": "SCC",
+   "frac": 0.1,
+   "naive_jaccard": 0.1179,
+   "corrected_ari": "0.0773",
+   "reference_ari": "0.5024",
+   "pct_spots_any": 71.08
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.75,
+   "naive_jaccard": 0.7671,
+   "corrected_ari": "0.5261",
+   "reference_ari": "0.5784",
+   "pct_spots_any": 94.37
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.5,
+   "naive_jaccard": 0.5185,
+   "corrected_ari": "0.1957",
+   "reference_ari": "0.6107",
+   "pct_spots_any": 91.63
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.35,
+   "naive_jaccard": 0.3638,
+   "corrected_ari": "0.1001",
+   "reference_ari": "0.5600",
+   "pct_spots_any": 87.06
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.25,
+   "naive_jaccard": 0.2648,
+   "corrected_ari": "0.0575",
+   "reference_ari": "0.5505",
+   "pct_spots_any": 82.42
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.15,
+   "naive_jaccard": 0.1593,
+   "corrected_ari": "0.0195",
+   "reference_ari": "0.4944",
+   "pct_spots_any": 76.03
+  },
+  {
+   "tag": "BCC",
+   "frac": 0.1,
+   "naive_jaccard": 0.1068,
+   "corrected_ari": "0.0102",
+   "reference_ari": "0.4038",
+   "pct_spots_any": 65.83
+  }
+ ]
+}

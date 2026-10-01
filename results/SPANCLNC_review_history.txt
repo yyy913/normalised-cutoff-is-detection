@@ -1,0 +1,3863 @@
+Peer Review File
+Unraveling lncRNA Diversity at a Single Cell Resolution and in
+a Spatial Context across Different Cancer Types
+Corresponding Author: Professor Quan Nguyen
+This file contains all editorial decision letters in order by version, followed by all author rebuttals in order by version.
+ 
+A version of this paper was originally rejected for publication by Nature Methods, however that decision was reconsidered after
+appeal by the authors. 
+Version 0: 
+Decision Letter: 
+26th Aug 2024 
+Dear Quan, 
+I hope you've been well. 
+Your Resource entitled "Unraveling lncRNA Diversity at a Single Cell Resolution and in a Spatial Context across Different
+Cancer Types" has now been seen by 3 reviewers, whose comments are attached. While they find your work of potential
+interest, they have raised serious concerns which in our view are sufficiently important that they preclude publication of the
+work in Nature Methods, at least in its present form. 
+As you will see, the reviewers raise concerns about a lack of validation of the data generated. Should further experimental data
+allow you to fully address these criticisms we would be willing to look at a revised manuscript (unless, of course, something
+similar has by then been accepted at Nature Methods or appeared elsewhere). This includes submission or publication of a
+portion of this work somewhere else. We hope you understand that until we have read the revised paper in its entirety we
+cannot promise that it will be sent back for peer-review. 
+If you are interested in revising this manuscript for submission to Nature Methods in the future, please contact me to discuss
+your appeal before making any revisions. Otherwise, we hope that you find the reviewers’ comments helpful when preparing
+your paper for submission elsewhere. 
+Sincerely, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+Although we cannot publish your paper, it may be appropriate for another journal in the Nature Portfolio. If you wish to explore
+the journals and transfer your manuscript please use our <a href="Link Redacted">manuscript transfer portal</a>. You will not
+have to re-supply manuscript metadata and files, unless you wish to make modifications. For more information, please see our
+<a href="http://www.nature.com/authors/author_resources/transfer_manuscripts.html?
+WT.mc_id=EMI_NPG_1511_AUTHORTRANSF&WT.ec_id=AUTHOR">manuscript transfer FAQ</a> page. 
+Reviewers' Comments: 
+Reviewer #1: 
+Remarks to the Author: 
+In this manuscript titled as ‘Unraveling lncRNA Diversity at a Single Cell Resolution and in a Spatial Context across Different
+Cancer Types’, the authors have analyzed single-cell and spatial transcriptomics data to uncover millions of previously not-
+reported lncRNAs in 13 cancer types. They also analyzed these lncRNAs using long read sequencing data. By establishing
+the co-expressions between these lncRNAs and cancer-associated protein coding genes, the authors claimed the functional
+correlation of these lncRNAs in cancer. In addition, previously reported disease-associated genetic variants were found within
+these lncRNAs. Based on these findings, these identified lncRNAs were given a group name as uTAR or cuTAR, and a
+website ‘SPanC-Lnc’ has been built on AWS cloud. Overall, this is a descriptive work. The detailed features and functions of
+these lncRNAs await for being clarified. 
+Major points: 
+1.‘uTAR’ stands for ‘unannotated Transcriptionally Active Regions’. This name should be changed, because ‘unannotated’ is
+not appropriate. These uTARs, as a manner of fact, have been ‘annotated’ by the authors already if these lncRNAs will be
+experimentally confirmed by further investigations. 
+2.The name of ‘uTAR/cuTAR’ is only used by the authors so far. To make their website more friendly to other users, it would be
+much helpful to use genomic location or other suitable searching ID, instead of cuTAR ID, for ‘visualization’ when these users
+don’t know whether there is a cuTAR or not yet on these users' interested genomic regions. 
+3.To confirm the existence of the uTARs/cuTARs, the authors must perform northern and primer extension experiments to
+obtain the information of these uTARsuTARs/cuTARs’ start sites, end points and exon/intron junctions. And use their datasets
+to analysis the potential splicing isoforms of the uTARs/cuTARs. 
+4.The following information in detail should be provided in the manuscript: quality of single-cell full-length transcriptome data,
+RNA-sequence length distribution, sequence accuracy and completeness, PolyA tail length, and unique molecular identifiers
+(UMIs). 
+5.It is actually a little bit surprising to find such a huge number of new lncRNAs after the recent years of studies on single-cell
+and spatial transcriptomics data. Please provide the alignment ratio to the reference genome on known protein coding genes’
+exons. 
+Minor points: 
+Overall, the language and figure format need to be polished. 
+Language: 
+First, many sentences are too complicated and difficulty to follow. For instance, Fig.4e legend ‘e, Co-expression of
+cuTAR215705 with the mRNA encoding the RNA-binding protein ELAVL1 and its interacting partner BIRC5 and the mRNA
+encoding TARDBP5 in breast cancer.’ (quoted) Could it be simplified as ‘e, Co-expression of cuTAR215705 with BIRC5,
+ELAVL1 and TARDBP5 in breast cancer.’? Similar issues are found at many other places. Please make sure to check the
+entire manuscript. 
+Second, the authors need to go through the manuscript to avoid mistakes or typos. Example: line536 ‘(HPV’ (quoted). Similar
+issues are found at many other places. Please make sure to check the entire manuscript. 
+Third, the punctuation should be correctly used. For example, line411 ‘Specifically, from OPSCC (HNC) we obtained...’
+(quoted). lines784-788 ‘This study not only provides coordinates of the identified transcripts but also provides a comparison of
+expression across different cancer types and types and analyzes their putative functions.’(quoted). For these two sentences, at
+least a comma should be added in front of 'we obtained' and ‘but also’. Similar issues are found at many other places. Please
+make sure to check the entire manuscript. 
+Figure format: 
+Enlarge the text size, unify the figure format. 
+Reviewer #2: 
+Remarks to the Author: 
+The authors have generated multiple spatial transcriptomics datasets, combined them with scRNA analysis of lncRNAs,
+particularly novel and unannotated lncRNAs, and investigated their overlap with regulatory features and disease-associated
+genetic variants. They also examined co-expressed cancer-associated protein-coding genes and strengthened their results
+through experimental validation, constructing a spatially resolved lncRNA atlas across different cancer and tissue types. While
+I have the following questions: 
+1. In Fig. S3b, why is KCNQ1OT highly expressed in breast cancer samples, and why is TINCR highly expressed in SCC and
+HNC without showing corresponding cancer specificity? 
+2. In Fig. S4, lncRNA statistics from FANTOM, LncExpDB, and NONCODE are presented, with NONCODE showing some
+lncRNAs not included in LncExpDB and FANTOM. Why were novel uTARs in Fig. 1c not filtered against NONCODE data? 
+3. The CPAT function for calculating coding potential scores is significantly affected by transcript length. Since the 3' ends of
+the library do not represent full-length transcripts, using CPAT scoring may result in lower scores. The authors are encouraged
+to compare their results with other scoring tools to determine whether there is overlap or discrepancy in the identified high
+translational potential lncRNAs. 
+4. In Fig. 3b, cuTAR121087 shows higher expression in the tumor region compared to the normal region. However, in H&N
+cancer samples from TCGA, this lncRNA is reported differently. What accounts for this discrepancy? 
+5. Line 414 mentions that 31.7% of 3' ends of fragmented transcripts captured by 10X Visium were validated by ONT. Has the
+author analyzed why 68.3% were not detected? Are these non-detected lncRNAs different from the validated 31.7%, and why
+is such a large portion of uTARs not detected? It seems a little strange. 
+6. Line 506 mentions the top eight uTARs in Fig. 4a, but the figure shows only three. 
+7. In Case Study 1, line 693, the sample of Acral Melanoma was collected from a poor responder, with cuTAR94762
+downregulated post-treatment, co-localized with an eQTL SNP associated with RASGRF1. Why does Fig. 6a show higher
+expression post-treatment? 
+8. The supplementary figures lack detailed annotations, which hinders understanding. Many figures also have inconsistent text
+sizes and unclear legends, such as in Fig. S6. 
+9. It is mentioned in methods that the genome is split into non-overlapping 50bp bins, labeled as transcriptionally active if at
+least three reads are detected in that bin. If a read just overlaps with a 50 bp bin, will it still be counted? 
+Reviewer #3: 
+Remarks to the Author: 
+Emerging evidence indicates that long noncoding RNAs (lncRNAs) play regulatory roles in gene expression regulation, and
+their dysregulation is associated with diseases such as cancers. However, owning to their low abundance, cell-type and
+tissue-type specific expression pattern, and the limitation of unbiased detection approaches, the spatial distribution and
+pathophysiological functions of lncRNAs are far from clear. 
+In this manuscript, the authors have integrated 36 spatial-resolved RNA sequencing and single-cell sequencing data from 13
+different cancers, and uncovered the spatial distribution information of over 350 thousand lncRNAs at the single-cell level.
+Importantly, they have deposited the annotation and expression data of lncRNAs (termed ‘SPanC-Lnc’) on the AWS cloud,
+which represents the largest resource of pan-cancer annotations of lncRNAs with single-cell and spatial context. By combining
+this information with available toolkits, the authors have identified the co-expression of tumor-specific lncRNAs with cancer-
+associated genes as well as their co-localization patterns with predicted interacting proteins. In addition, they have also
+suggested specific cases to indicate the potential application of the lncRNA spatial distribution information in analyzing the
+responses of cancer therapy and serving as prognostic markers. 
+Overall, this manuscript has provided a useful recourse of the lncRNA spatial distribution information at the single-cell
+resolution, which is helpful to understand the distribution features and functional potential of lncRNAs in the context of cancers.
+However, this manuscript unfortunately does not provide any novel or advanced methods for the lncRNA studies, rather is a
+combination of existing single-cell sequencing, spatial transcriptomic sequencing, and other existing methods as a dataset. It is
+more appropriate for a journal specialized in data resources at the current stage. 
+Other major concerns: 
+1) Considering the low abundance of most lncRNAs at the cellular level, it is critical to evaluate the reliability of signals from
+single-cell and special transcriptomic sequencing. How many of the signals detected are false positive? How is the signals
+overlapping with bulk RNA sequencing? How much input samples are subjected for sequencing? In Supplemental Figure 5c,
+the overlap of different sequencing data is fairly low, does it indicate most of the signals are false positive? 
+2) In Figure 1a, only one sample for each type of cancer was analyzed by scRNA-seq, which is insufficient and can be biased.
+To conclude the pan-cancer information of lncRNAs, at least triplicate samples are needed to provide a convincing dataset. 
+3) In Figure 2c, how does the authors define lncRNAs conservation? Is it solely based on the primary sequence similarity?
+Alternatively, are the structure conservation or positional conservation taken into consideration? It is confusing to see the
+conservation score of MALAT1 and HOTAIR is higher than the coding RNA GAPDH and RPL5. 
+4) In Figures 4b and 4e, and Figure 5, it is necessary to experimentally detect the co-expression and co-localization of
+lncRNAs with corresponding cancer-associated genes and interacting proteins. 
+5) For lncRNAs that were suggested to indicate responses to cancer therapy and as biomarkers in Figure 6, how many of them
+are found from previous bulk RNA sequencing? What is their abundance in general and individually? Again, it is critical to
+evaluate whether their expression is false positive. 
+Minor concerns: 
+1) The logical of the manuscript needs to polish. There are some confusions in the figures and text: 
+- Line 231, “157 uTARs were expressed on a pan-cancer level”; however, as shown in Supplemental Figure 5, 210 uTARs
+were labeled. 
+- Line 235, “Supplemental Fig. 4b” appeared to be “Supplemental Fig. 5b” 
+- Line 262, Figure 2a, it is unable to see 95.7% of the uTARs lack the coding potential. 
+- Lines 640 and 641, Figure 5c, PMEL and MLANA are not in proximal. 
+2) Other mistakes: i.e. Line 477 double “we”; Line 652 LINC00589 is mislabeled to LINC0058. 
+Although we cannot publish your paper, it may be appropriate for another journal in the Nature Portfolio. If you wish to explore
+the journals and transfer your manuscript please use our <a href="Link Redacted">manuscript transfer portal</a>. You will not
+have to re-supply manuscript metadata and files, unless you wish to make modifications. For more information, please see our
+<a href="http://www.nature.com/authors/author_resources/transfer_manuscripts.html?
+WT.mc_id=EMI_NPG_1511_AUTHORTRANSF&WT.ec_id=AUTHOR">manuscript transfer FAQ</a> page. 
+** For Nature Portfolio general information and news for authors, see http://npg.nature.com/authors. 
+Version 1: 
+Decision Letter: 
+18th Oct 2024 
+Dear Quan, 
+I hope things have been well. 
+Thank you for your letter asking us to reconsider our decision on your Resource, "Unraveling lncRNA Diversity at a Single Cell
+Resolution and in a Spatial Context across Different Cancer Types". After careful consideration we have decided that we are
+willing to consider a revised version of your manuscript. 
+We strongly recommend focusing on the lncRNA resource (rather than the method) and highlighting via validations and
+demonstrations of usability how this data might be useful in furthering basic biological research. As for your question on the
+RNA-ISH experiments, we would recommend testing several more TARs to support the dataset. 
+When revising your paper: 
+* include a point-by-point response to our referees and to any editorial suggestions 
+* please underline/highlight any additions to the text or areas with other significant changes to facilitate review of the revised
+manuscript 
+* address the points listed described below to conform to our open science requirements 
+* ensure it complies with our general format requirements as set out in our guide to authors at www.nature.com/naturemethods 
+* resubmit all the necessary files electronically by using the link below to access your home page 
+Link Redacted 
+Note:
+ This URL links to your confidential home page and associated information about manuscripts you may have submitted,
+or that you are reviewing for us. If you wish to forward this email to co-authors, please delete the link to your homepage. 
+We hope to receive your revised paper within ten weeks. If you cannot send it within this time, please let us know. In this event,
+we will still be happy to reconsider your paper at a later date so long as nothing similar has been accepted for publication at
+Nature Methods or published elsewhere. 
+OPEN SCIENCE REQUIREMENTS 
+REPORTING SUMMARY AND EDITORIAL POLICY CHECKLISTS 
+When revising your manuscript, please submit reporting summary and editorial policy checklists. 
+Reporting summary: https://www.nature.com/documents/nr-reporting-summary.zip 
+Editorial policy checklist: https://www.nature.com/documents/nr-editorial-policy-checklist.zip 
+If your paper includes custom software, we also ask you to complete a supplemental reporting summary. 
+Software supplement: https://www.nature.com/documents/nr-software-policy.pdf 
+Please submit these with your revised manuscript. They will be available to reviewers to aid in their evaluation if the paper is
+re-reviewed. If you have any questions about the checklist, please see http://www.nature.com/authors/policies/availability.html
+or contact me. 
+Please note that these forms are dynamic ‘smart pdfs’ and must therefore be downloaded and completed in Adobe Reader. We
+will then flatten them for ease of use by the reviewers. If you would like to reference the guidance text as you complete the
+template, please access these flattened versions at http://www.nature.com/authors/policies/availability.html. 
+DATA AVAILABILITY 
+Please include a “Data availability” subsection in the Online Methods. This section should inform readers about the availability
+of the data used to support the conclusions of your study, including accession codes to public repositories, references to
+source data that may be published alongside the paper, unique identifiers such as URLs to data repository entries, or data set
+DOIs, and any other statement about data availability. At a minimum, you should include the following statement: “The data that
+support the findings of this study are available from the corresponding author upon request”, describing which data is available
+upon request and mentioning any restrictions on availability. If DOIs are provided, please include these in the Reference list
+(authors, title, publisher (repository name), identifier, year). For more guidance on how to write this section please see:
+http://www.nature.com/authors/policies/data/data-availability-statements-data-citations.pdf 
+MATERIALS AVAILABILITY 
+As a condition of publication in Nature Methods, authors are required to make unique materials promptly available to others
+without undue qualifications. 
+Authors reporting new chemical compounds must provide chemical structure, synthesis and characterization details. Authors
+reporting mutant strains and cell lines are strongly encouraged to use established public repositories. 
+More details about our materials availability policy can be found at https://www.nature.com/nature-portfolio/editorial-
+policies/reporting-standards#availability-of-materials 
+ORCID 
+Nature Methods is committed to improving transparency in authorship. As part of our efforts in this direction, we are now
+requesting that all authors identified as ‘corresponding author’ on published papers create and link their Open Researcher and
+Contributor Identifier (ORCID) with their account on the Manuscript Tracking System (MTS), prior to acceptance. This applies
+to primary research papers only. ORCID helps the scientific community achieve unambiguous attribution of all scholarly
+contributions. You can create and link your ORCID from the home page of the MTS by clicking on ‘Modify my Springer Nature
+account’. For more information please visit please visit <a
+href="http://www.springernature.com/orcid">www.springernature.com/orcid</a>. 
+We look forward to hearing from you soon. 
+Sincerely, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+Version 2: 
+Decision Letter: 
+Our ref: NMETH-RS57090B 
+10th Nov 2025 
+Dear Quan, 
+Thank you for submitting your revised manuscript "Unraveling lncRNA Diversity at a Single Cell Resolution and in a Spatial
+Context across Different Cancer Types" (NMETH-RS57090B). It has now been seen by the original referees and their
+comments are below. The reviewers find that the paper has improved in revision, and therefore we'll be happy in principle to
+publish it in Nature Methods, pending minor revisions to satisfy the referees' final requests and to comply with our editorial and
+formatting guidelines. 
+We are now performing detailed checks on your paper and will send you a checklist detailing our editorial and formatting
+requirements within two weeks or so. Please do not upload the final materials and make any revisions until you receive this
+additional information from us. 
+TRANSPARENT PEER REVIEW 
+Nature Methods offers a transparent peer review option for new original research manuscripts submitted from 17th February
+2021. We encourage increased transparency in peer review by publishing the reviewer comments, author rebuttal letters and
+editorial decision letters if the authors agree. Such peer review material is made available as a supplementary peer review file.
+Please state in the cover letter ‘I wish to participate in transparent peer review’ if you want to opt in, or ‘I do not wish to
+participate in transparent peer review’ if you don’t.
+ Failure to state your preference will result in delays in accepting your
+manuscript for publication. 
+Please note: we allow redactions to authors’ rebuttal and reviewer comments in the interest of confidentiality. If you are
+concerned about the release of confidential data, please let us know specifically what information you would like to have
+removed. Please note that we cannot incorporate redactions for any other reasons. Reviewer names will be published in the
+peer review files if the reviewer signed the comments to authors, or if reviewers explicitly agree to release their name. For more
+information, please refer to our <a href="https://www.nature.com/documents/nr-transparent-peer-review.pdf" target="new">FAQ
+page</a>. 
+ORCID 
+IMPORTANT: Non-corresponding authors do not have to link their ORCIDs but are encouraged to do so. Please note that it
+will not be possible to add/modify ORCIDs at proof. Thus, please let your co-authors know that if they wish to have their ORCID
+added to the paper they must follow the procedure described in the following link prior to acceptance:
+https://www.springernature.com/gp/researchers/orcid/orcid-for-nature-research 
+Author names using non-Roman characters
+ 
+Nature Portfolio journals can support presentation of author names using non-Roman characters in the HTML version of the
+article. If you wish to, please include author names in parentheses after the Roman-character spelling; <a
+href="https://www.nature.com/articles/s44222-024-00258-2">see example online here</a>. Currently supported scripts are:
+Arabic, Chinese, Cyrillic, Devanagari, Greek, Hebrew, Hangul, Japanese and Persian. You will be asked to verify the
+rendering is correct at proof stage. 
+Thank you again for your interest in Nature Methods. Please do not hesitate to contact me if you have any questions. We will
+be in touch again soon. 
+Sincerely, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+Reviewer #1 (Remarks to the Author): 
+After revision, the manuscript presented is improved in rigorousness. However, it has not been improved in terms of the
+scientific impact and novelty. The database provided in this manuscript will be a useful and convenient tool for lncRNA
+researchers, and is more appropriate for a specialized journal. 
+Reviewer #3 (Remarks to the Author): 
+This reviewer appreciates that the authors have made significant efforts to address the concerns raised by conducting
+additional data and analyses. Further examining the author’s responses to the comments from other reviewers highlights that
+they have done substantial amount of work to more rigorously assess the lncRNA spatial distribution and expression at the
+single-cell resolution, all of which greatly improve the manuscript. Several remaining concerns are listed below: 
+Major concerns: 
+1) Line 486-500 (Figures S17 & S18): As mentioned in the initial review, the reviewer still concerned that the 10×Visium is
+more “sensitive” than qPCR. For instance, cuTAR121087 showed comparable Ct values than the NEG1 negative control in
+qPCR, but showed significant expression in the 10×Visium data. The authors should discuss the potential artifacts that
+10×Visium may bring and how to avoid these false positive signals. Besides, the authors should also explain the possible
+reasons behind the heterogeneous expression trends of cuTAR100897 between the 10×Visium and qPCR data. 
+Minor concerns: 
+(1). Line 149: lncRNA “KCNQ1OT1” but not “KNCQ1OT”. 
+(2). The authors should clearly state the meaning represented by the numerical values corresponding to the colors in the figure
+legend, e.g. Figures 4b, 4d, S15, S17 & S18. 
+(3) Figure S26d: It is recommended to label the cuTAR215705 with other color to avoid potential misleading of merged signals
+of BIRC5 and ELAVL1. 
+Version 3: 
+Decision Letter: 
+23rd Mar 2026 
+Dear Quan, 
+I am pleased to inform you that your Resource, "Unraveling lncRNA Diversity at a Single Cell Resolution and in a Spatial
+Context across Different Cancer Types", has now been accepted for publication in Nature Methods. The received and
+accepted dates will be Jul 09, 2024 and Mar 23, 2026. This note is intended to let you know what to expect from us over the
+next month or so, and to let you know where to address any further questions. 
+Over the next few weeks, your paper will be copyedited to ensure that it conforms to Nature Methods style. Once your paper is
+typeset, you will receive an email with a link to choose the appropriate publishing options for your paper and our Author
+Services team will be in touch regarding any additional information that may be required. It is extremely important that you let
+us know now whether you will be difficult to contact over the next month. If this is the case, we ask that you send us the contact
+information (email, phone and fax) of someone who will be able to check the proofs and deal with any last-minute problems. 
+After the grant of rights is completed, you will receive a link to your electronic proof via email with a request to make any
+corrections within 48 hours. If, when you receive your proof, you cannot meet this deadline, please inform us at
+rjsproduction@springernature.com immediately. 
+Authors may need to take specific actions to achieve compliance with funder and institutional open access mandates.
+If your research is supported by a funder that requires immediate open access (e.g. according to <a
+href=“https://www.springernature.com/gp/open-science/plan-s-compliance”> Plan S principles</a> or the <a
+href=“https://www.springernature.com/gp/open-science/us-federal-agency-compliance”> NIH public access policy</a>) then
+you should select the gold OA route, and we will direct you to the compliant route where possible. Because authors warrant
+under our subscription licensing terms that they haven’t committed to licensing any version of their article under a licence
+inconsistent with the terms of our agreement – including the applicable embargo period – publication under the subscription
+model isn’t suitable for authors whose funders require no embargo. 
+If you have any questions about our publishing options, costs, Open Access requirements, or our legal forms, please contact
+ASJournals@springernature.com 
+If you have posted a preprint on any preprint server, please ensure that the preprint details are updated with a publication
+reference, including the DOI and a URL to the published version of the article on the journal website. 
+You may wish to make your media relations office aware of your accepted publication, in case they consider it appropriate to
+organize some internal or external publicity. Once your paper has been scheduled you will receive an email confirming the
+publication details. This is normally 3-4 working days in advance of publication. If you need additional notice of the date and
+time of publication, please let the production team know when you receive the proof of your article to ensure there is sufficient
+time to coordinate. Further information on our embargo policies can be found here:
+https://www.nature.com/authors/policies/embargo.html 
+To assist our authors in disseminating their research to the broader community, our SharedIt initiative provides you with a
+unique shareable link that will allow anyone (with or without a subscription) to read the published article. Recipients of the link
+with a subscription will also be able to download and print the PDF. 
+As soon as your article is published, you will receive an automated email with your shareable link. 
+If you are active on Twitter/X or Bluesky, please e-mail me your and your coauthors’ handles so that we may tag you when the
+paper is published. 
+You can now use a single sign-on for all your accounts, view the status of all your manuscript submissions and reviews,
+access usage statistics for your published articles and download a record of your refereeing activity for the Nature journals. 
+Please note that you and any of your coauthors will be able to order reprints and single copies of the issue containing your
+article through Nature Portfolio's reprint website, which is located at http://www.nature.com/reprints/author-reprints.html. If there
+are any questions about reprints please send an email to author-reprints@nature.com and someone will assist you. 
+Please feel free to contact me if you have questions about any of these points. 
+Best regards, 
+Madhura 
+Madhura Mukhopadhyay, PhD 
+Senior Editor 
+Nature Methods 
+** Visit the Springer Nature Editorial and Publishing website at <a href="http://editorial-jobs.springernature.com?
+utm_source=ejP_NMeth_email&utm_medium=ejP_NMeth_email&utm_campaign=ejp_Nmeth">www.springernature.com/editorial-
+and-publishing-jobs</a> for more information about our career opportunities. If you have any questions please click <a
+href="mailto:editorial.publishing.jobs@springernature.com">here</a>.**
+Open Access
+ This Peer Review File is licensed under a Creative Commons Attribution 4.0 International License, which
+permits use, sharing, adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit
+to the original author(s) and the source, provide a link to the Creative Commons license, and indicate if changes were made.
+In cases where reviewers are anonymous, credit should be given to 'Anonymous Referee' and the source.
+The images or other third party material in this Peer Review File are included in the article’s Creative Commons license,
+unless indicated otherwise in a credit line to the material. If material is not included in the article’s Creative Commons license
+and your intended use is not permitted by statutory regulation or exceeds the permitted use, you will need to obtain permission
+directly from the copyright holder.
+To view a copy of this license, visit 
+https://creativecommons.org/licenses/by/4.0/
+ 
+1 
+NMETH-RS57090 
+ 
+Response to Reviewers 
+ 
+We would like to thank the reviewers for their constructive comments and suggestions. All 
+comments are constructive and are addressable. We present below our point-to-point responses, 
+which have addressed most questions and have substantially improved our manuscript.  
+ 
+Color scheme followed 
+Reviewers’ comments 
+Answers to the reviewers’ comments 
+ 
+All the changes and updates in the revised manuscript are highlighted in blue. 
+ 
+Reviewer #1: 
+Remarks to the Author: 
+In this manuscript titled as ‘Unraveling lncRNA Diversity at a Single Cell Resolution and in a 
+Spatial Context across Different Cancer Types’, the authors have analyzed single-cell and spatial 
+transcriptomics data to uncover millions of previously not-reported lncRNAs in 13 cancer types. 
+They also analyzed these lncRNAs using long read sequencing data. By establishing the co -
+expressions between these lncRNAs and cancer-associated protein coding genes, the authors 
+claimed the functional correlation of these lncRNAs in cancer. In addition, previously reported 
+disease-associated genetic variants were found within these lncRNAs. Based on these findings, 
+these identified lncRNAs were given a group name as uTAR or cuTAR, and a website ‘SPanC-
+Lnc’ has been built on AWS cloud. Overall, this is a descriptive work. The detailed features and 
+functions of these lncRNAs await for being clarified. 
+ 
+We thank the reviewer for the comment. This manuscript, submitted to ‘Nature Methods Resource’ 
+aims to provide the first and most comprehensive spatial and single cell lncRNA database, 
+especially focusing on unannotated or uncharacterized lncRNAs. This first data resource will 
+provide the community with a reference of expression abundance and spatial location, visually 
+searchable and mappable using our AWS interactive cloud application.  
+ 
+Our method and resource enables novel analysis of the potential function of any cuTAR through 
+colocalization with known coding genes and functional annotation. By providing the identity of 
+specific cell types and sub-tumor regions where existing lncRNAs are expressed, this approach 
+introduces a new feature that can indicate potential functional roles. Our analyses show that a 
+subset of these cuTARs (the cancer associated unannotated Transcriptionally Active Regions that 
+are likely lncRNAs)  are coexpressed with known markers and/or causal genes, co-localize with 
+known causal SNPs, are novel markers of cell clusters/cell types, and are predictive features for 
+survival or drug responses.  
+ 
+This high-throughput spatial analysis allows researchers to confidently prioritize lncRNAs for 
+targeted validation experiments, tailored to specific diseases and anticipated outcomes, such as 
+overall biological function or drug target potential. These insights were previously unattainable 
+ 
+2 
+without spatial and/or single-cell resolution, highlighting the unique opportunities our method 
+provides for functional exploration of lncRNAs in tumor tissue. 
+ 
+As specific examples of how to leverage this valuable data resource for understanding/discovering 
+lncRNA functions, we showed that our spatial, functional analysis revealed the likely roles of 
+cuTARs cuTAR288960 and cuTAR94762 in response to anti-PD1 therapy in Melanoma (Figure 
+5) and the expression of cuTAR215705 in stratifying patient survival in breast cancers (better than 
+using the coding gene BIRC5) (Figure 6) and potential interaction with BIRC5 through interactions 
+with ribosomal binding proteins.  
+ 
+Major points: 
+1.‘uTAR’ stands for ‘unannotated Transcriptionally Active Regions’. This name should be 
+changed, because ‘unannotated’ is not appropriate. These uTARs, as a manner of fact, have been 
+‘annotated’ by the authors already if these lncRNAs will be experimentally confirmed by further 
+investigations. 
+We appreciate the suggestion. The main aim of the current study is to provide a single cell and 
+spatial resource of previously unannotated lncRNAs in the GENCODE reference annotations in 
+cancer and hence a nomenclature unique to our database has been introduced in a way that they 
+are tractable (e.g., by mapping to reference genome coordinates and visualised in a common 
+genome browser) and compatible (e.g. via ID matching) with existing databases. The identified 
+transcripts at a sample level are described as uTARs and the non-redundant set of all these uTARs 
+across all samples are called cuTARs, each given a unique ID in our SPanC-Lnc resource. For 
+lncRNAs annotated in other databases, we keep the cuTAR ID and specify the conventional ID of 
+lncRNAs as used in other databases. For example, cuTAR288960 has been identified as 
+HSALNG0070406 in LncBook. 
+ 
+2.The name of ‘uTAR/cuTAR’ is only used by the authors so far. To make their website more 
+friendly to other users, it would be much helpful to use genomic location or other suitable searching 
+ID, instead of cuTAR ID, for ‘visualization’ when these users do n’t know whether there is a 
+cuTAR or not yet on these users' interested genomic regions. 
+Thank you for the valuable suggestion. The previous table browser under the ‘Browse’ tab enables 
+browsing the coordinates and applying filters such as ‘starts with’ and ‘ends with’. Any regions of 
+interest could be looked up by selecting the ‘Chromosome’ and selecting a value for ‘starts with’ 
+under the ‘Start’ column and ‘ends with’ under the ‘End’ column. For a more user -friendly 
+browsing, the filters have been improved to enable the search by coordinate windows (chr:start-
+end). We have also incorporated a UCSC style genome browser that helps visualize colocalizing 
+genomic features in addition to our table browser annotations. 
+ 
+3 
+ 
+Rebuttal Figure 1: Improvement in the SPanC-Lnc website. The screenshot shows a new tab 
+for UCSC-browser style browsing options providing a visualization across different genomic 
+layers/tracks. It enables searching by chromosomal coordinates. 
+ 
+3.To confirm the existence of the uTARs/cuTARs, the authors must perform northern and primer 
+extension experiments to obtain the information of these uTARs/cuTARs’ start sites, end points 
+and exon/intron junctions. And use their datasets to analysis the potential splicing isoforms of the 
+uTARs/cuTARs. 
+We thank the reviewer for the comment. To confirm the existence of cuTARs, we have performed 
+a very comprehensive set of independent experiments. First, we run qPCR experiments, targeting 
+regions of the transcripts. We further performed Xenium in-situ experiment adding a customised 
+probe panel of cuTARs  as described in responses to the  Reviewer 3’s comments. For high -
+throughput validation, we have conducted two types of long-read sequencing experiments, with 
+NanoPore and PacBio. We generated more sing le-cell spatial data using Curio-Seeker and 
+STomics. The STomics offers complementary data as it can detect non-polyA lncRNA. These 
+spatial single cell data confirmed the presence of 83.47% of cuTARs identified using 10X Visium 
+spatial transcriptomics and scRNA-seq (Rebuttal Fig. 2). This has been incorporated in Fig. 2 of 
+the revised manuscript (Manuscript pages 7, 8). 
+ 
+Rebuttal Figure 2: Verification of cuTARs across spatial technologies offering single-cell 
+resolution. a, uTARs shared across single-cell resolution spatial data from STOmics and Curio-
+Seeker and our Visium/scRNA-seq identified cuTARs. b, Expression of cancer-specific cuTARs 
+visualized on STOmics and Curio-Seeker samples. 
+ 
+We agree with the reviewer that characterizing the structure of the cuTARs will add value to our 
+findings. Our long read sequencing was done on the unfragmented cDNA from the Visium library, 
+
+ 
+4 
+providing longer reads than the standard Visium protocol. This allowed us to achieve a more 
+confident mapping, and hence validating the presence of cuTARs as real transcripts. Building on 
+computational prediction of cuTARs’ boundaries from BAM files, we  f urther characterized 
+cuTARs’ start, end and splice sites by overlapping their coordinates with TSS annotations from 
+FANTOM, poly-A sites (PAS) and splice sites (Rebuttal Fig 3 a). These reference databases 
+allowed us to classify cuTARs into the following categories: (i) complete evidence (overlapping 
+with a TSS at the 5’ end and a PAS at the 3’ end within a 1.5kb window upstream and downstream 
+respectively), (ii) partial evidence comprising of first exons (TSS at the 5’ end and a donor site 
+junction at the 3’ end), internal exons (acceptor site at the 5’ end and a donor site at the 3’ end) 
+and last exons (acceptor site at the 5’ end and PAS at the 3’ end), and (iii) incomplete evidence if 
+it overlapped with either TSS or PAS (Rebuttal Fig 3b)). 8.4% cuTARs had complete evidence 
+(Rebuttal Fig 3b). A large proportion (24.9%) of cuTARs had PAS, last exon, and internal exon 
+evidence, potentially indicating that these transcripts have at least two exons. To assess further 
+evidence, we overlapped all cuTARs with the new lncRNA annotations from GENCODEv47 since 
+the previously used reference was release v43, which confirmed that 21.5% of cuTARs that were 
+previously unannotated in GENCODE v43 are now annotated as lncRNAs in v47. This observation 
+highlights that the TAR-scRNA-seq pipeline that we used for the discovery of unannotated TARs 
+relative to a reference transcriptome is reliable. We have incorporated these new results to  Fig. 1 
+of the revised manuscript (Manuscript pages 3, 4). 
+ 
+Rebuttal Figure 3: Characterization of cuTARs based on a, external evidence and b, 
+proportions of cuTARs with several layers of evidence.  
+ 
+Additionally, we predicted splice sites using AlphaGenome, a deep learning tool designed to 
+predict functional genomic features and processing events. It has been shown that alphagenome 
+predicts splicing events with a high accuracy (Pearson correlation of up to 0.82 between predicted 
+and observed values)1. To assess how AlphaGenome may work with our data, we compared the 
+predicted splice sites with the RefSeq exon annotations for the cuTARs that were annotated in 
+GENCODE v47 but were unannotated as of v43. In most cases, splice site peaks are observed in 
+the v47 annotated exon-intron regions. It has also been shown that splicing sites correspond with 
+protein coding gene annotations (Rebuttal Fig. 4). With this observation confirming the validity 
+of the approach, we were able to predict and suggest potential splice sites in the unannotated and 
+uncharacterized cuTARs as well. The result was added as Manuscript Fig. 1g, showing 
+Alphagenome predicted splice junctions for cuTAR213507, that also correspond to the intropolis 
+junctions). These results have also been  incorporated in the Manuscript Fig. 1  and 
+
+ 
+5 
+Supplementary Fig. 6 (Manuscript pages 4, 5). The AlphaGenome predictions were also enabled 
+in the SPanC-Lnc database.   
+ 
+Rebuttal Figure 4:  Splice site prediction using Alphagenome. a, Comparison of predicted 
+donor and acceptor splice sites by Alphagenome with the annotated transcript structure of the 
+protein coding gene BIRC5 and b, cuTARs identified using the TAR-scRNA-seq pipeline with 
+their annotated counterparts in the GENCODE v47 that was released after they were identified as 
+cuTARs. The corresponding cuTAR boundaries were extended to match the length of the 
+annotated counterparts for splice site prediction and visualization with AlphaGenome to compare 
+with annotated exonic regions. 
+ 
+4.The following information in detail should be provided in the manuscript: quality of single-cell 
+full-length transcriptome data, RNA -sequence length distribution, sequence accuracy and 
+completeness, PolyA tail length, and unique molecular identifiers (UMIs). 
+Thank  you  for  your feedback. We have added Supplementary Tables (S1,S2) summarizing the 
+QC and alignment stats for the long read data as below and also included in the revised version. 
+
+ 
+6 
+ 
+Table S1. Quality control for Nanopore data     
+  HNC SCC BCC 
+Total Pass Reads 16,679,922  28,184,922 
+ 
+19,431,326 
+Median read length 695  626  594 
+Median PHRED score (Pass reads) 16.168  11.63  11.85 
+Spatial Barcodes Recovered 
+ 1028 
+(94.3%) 
+1464 
+(99.389%) 
+ 1314 
+(100%) 
+Mean PolyA-Tail length  39.72 32.02   33.26 
+Mapped reads  77,12,960 4,072,563  8,336,835 
+    
+Table S2, Quality control for PacBio data     
+  CP CM  
+Hifi Reads 1626181 1159286  
+Segmented Reads 25448529 17846481  
+Percent of reads with full arrays 94.82 93.09  
+Reads after Barcode Correction and UMI Deduplication 3562499 4129135  
+mapped_reads_n 3271247 3620435  
+mapped_readlength_mean 435.04 329.68  
+Mean Gap-Compressed Sequence Identity 99.74 99.84  
+Median UMIs per Cell 6102 4420  
+Estimated spots SMRTlink 513 (12.8%) 838 (17.6%)  
+ 
+7 
+Estimated spots uTAR pipeline 3983 (100%) 4741 (100%)  
+Mean Reads per Cell 16026 11079  
+ 
+5. It is actually a little bit surprising to find such a huge number of new lncRNAs after the recent 
+years of studies on single-cell and spatial transcriptomics data. Please provide the alignment ratio 
+to the reference genome on known protein coding genes’ exons. 
+A uTAR-to-gene alignment ratio is greatly influenced by the coverage of the individual samples. 
+For the BreastA sample, where cuTARs were detected the most among the spatial datasets, the 
+ratio is 0.016, while for HNC, where the number of cuTARs is about 12 times lower, the ratio is 
+0.00059. In both cases, the ratio indicates more number of reads mapped to the annotated genome. 
+Only up to about 1.6% of the aligned reads map to uTARs. The most likely reasons for the low 
+genome mapping coverage are that:  1) Visium only measures up to 200 bp from the 3’ end, and 
+so by default this is only a part of the lncRNA, 2) the lowly expressed of lncRNA compared to 
+protein-coding RNA, and 3) the cell type specific nature of uTAR compared to that of the coding 
+genes. Nevertheless, our stringent pipeline detected 90,533 cuTARs consistently in at least two 
+cancer types, and ~58% of all cuTARs overlap with FANTOM/LncBook/NONCODE lncRNAs. 
+Overall, 47 cuTARs were detected in all samples across 13 tissues, while 1,278 were detected in 
+at least 10 cancer types.  
+ 
+Among the 219,442 uTARs we reported, the majority of them are unique to one cancer type 
+(Manuscript Supplementary Fig. 5a,b) and are expressed at low levels, likely be filtered during 
+downstream analyses in most projects, which only considered one cell type and/or only abundant 
+genes. Overall, ~15,000 uTARs were detected per sample, depending on the coverage. These 
+numbers are comparable to those from other studies. LncExpDB reports 101,293 human lncRNAs, 
+and the FANTOM-CAGE study reports 27,919 lncRNAs. However, not all these lncRNAs are 
+expressed in all individuals and are also cancer-specific. There were a few studies that have 
+profiled lncRNAs in skin cancers using different methods. For example, a study by Wang et al.2  
+profiled lncRNAs in immune cells of PBMCs from patients with Melanoma, identifying 24,881 
+known lncRNAs and 2,744 novel lncRNAs by whole transcriptome reconstruction following 
+RNA-sequencing. A comprehensive study of Iyer et al. 3 identified more than 58,000 mature 
+lncRNAs from 7256 RNA libraries derived from human tissues, including 5298 primary cancers 
+and 281 metastases. Given the higher throughput, enabling profiling thousands of cells and 
+measuring expression at single-cell level, the high numbers detected are expected. 
+ 
+ 
+Minor points: 
+Overall, the language and figure format need to be polished. 
+Language: 
+First, many sentences are too complicated and difficulty to follow. For instance, Fig.4e legend ‘e, 
+Co-expression of cuTAR215705 with the mRNA encoding the RNA-binding protein ELAVL1 
+and its interacting partner BIRC5 and the mRNA encoding TARDBP5 in breast cancer.’ (quoted) 
+Could it be simplified as ‘e, Co -expression of cuTAR215705 with BIRC5, ELAVL1 and 
+TARDBP5 in breast cancer.’? Similar issues are found at many other places. Please make sure to 
+check the entire manuscript. 
+ 
+8 
+We apologize for this issue, and we have thoroughly revised the writing throughout the manuscript. 
+ 
+Second, the authors need to go through the manuscript to avoid mistakes or typos. Example: 
+line536 ‘(HPV’ (quoted). Similar issues are found at many other places. Please make sure to check 
+the entire manuscript. 
+We have comprehensively revised the text throughout and made corrections. 
+ 
+Third, the punctuation should be correctly used. For example, line411 ‘Specifically, from OPSCC 
+(HNC) we obtained...’ (quoted). Lines 784-788 ‘This study not only provides coordinates of the 
+identified transcripts but also provides a comparison of expression across different cancer types 
+and types and analyzes their putative functions.’(quoted). For these two sentences, at least a 
+comma should be added in front of 'we obtained' and ‘but also’. Similar issues are found at many 
+other places. Please make sure to check the entire manuscript. 
+We thank the reviewer, and we have corrected throughout the manuscript. 
+ 
+Figure format: 
+Enlarge the text size, unify the figure format. 
+Corrections made to all the Figures.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+Reviewer #2: 
+Remarks to the Author: 
+The authors have generated multiple spatial transcriptomics datasets, combined them with scRNA 
+analysis of lncRNAs, particularly novel and unannotated lncRNAs, and investigated their overlap 
+with regulatory features and disease-associated genetic variants. They also examined co-expressed 
+cancer-associated protein-coding genes and strengthened their results through experimental 
+validation, constructing a spatially resolved lncRNA atlas across different cancer and tissue types. 
+While I have the following questions: 
+ 
+We thank the reviewer for the constructive comments, which help improve the quality of the 
+manuscript. We have revised accordingly and responded point-by-point below.  
+ 
+1. In Fig. S3b, why is KCNQ1OT highly expressed in breast cancer samples, and why is TINCR 
+highly expressed in SCC and HNC without showing corresponding cancer specificity? 
+KCNQ1OT is an oncogenic lncRNA, largely implicated as a prognostic marker in CRC but also 
+known to be expressed in other cancer types. We show that this is higher in the CRC sample than 
+the expression of other lncRNAs in that sample.   
+TINCR plays dual roles in cancer and is expressed in several cancer types. It has oncogenic 
+functions in breast, lung, liver, and oral cancers, while playing a tumor-suppressing role in SCC, 
+colorectal and prostrate cancers. We thank the reviewer and have added clarification to the main 
+text (Pages 2, 3). 
+ 
+2. In Fig. S4, lncRNA statistics from FANTOM, LncExpDB, and NONCODE are presented, with 
+NONCODE showing some lncRNAs not included in LncExpDB and FANTOM. Why were novel 
+uTARs in Fig. 1c not filtered against NONCODE data? 
+We thank the reviewer for the comment. We found ~4% of uTARs that are not in FANTOM and 
+LncExpDB but are found in NONCODE. We have updated the Manuscript Fig.1c to include 
+NONCODE, LncPedia and the latest GENCODE v47 novel lncRNA annotations to make the 
+comparison more comprehensive (Manuscript pages 3, 4). 
+ 
+3. The CPAT function for calculating coding potential scores is significantly affected by transcript 
+length. Since the 3' ends of the library do not represent full-length transcripts, using CPAT scoring 
+may result in lower scores. The authors are encouraged to compare their results with other scoring 
+tools to determine whether there is overlap or discrepancy in the identified high translational 
+potential lncRNAs. 
+Thank you for the very helpful suggestion. We agree that CPAT results are affected by the length 
+of the transcript. RNAsamba is another coding potential calculator that works well on partial-
+length sequences. RNAsamba identified 97% of all cuTARs to be non -coding. While CPAT 
+filtered out many cuTARs, RNAsamba retained them and inferred the coding potential. 76.6% of 
+cuTARs are inferred to be non-coding using both the tools. Overall, 98.3% of the total cuTARs 
+lack coding potential. We have updated the manuscript Fig.1f with these results. The Figure 
+below show a comparison of CPAT and RNAsamba (Rebuttal Fig. 5; added discussion to 
+Manuscript pages 4, 5). 
+ 
+ 
+10 
+ 
+Rebuttal Figure 5: Venn diagram showing the coding-potential based classification of cuTARs 
+using RNAsamba and CPAT.   
+ 
+4. In Fig. 3b, cuTAR121087 shows higher expression in the tumor region compared to the normal 
+region. However, in H&N cancer samples from TCGA, this lncRNA is reported differently. What 
+accounts for this discrepancy? 
+The signals from TCGA bulk HN samples could be another form of confirmation, but not 
+necessarily the ground truth, because these methods fail to capture lowly expressing signals from 
+rare cell populations. In fact, TCGA HN samples represent a heterogeneous mix of different HN 
+cancers, not just HPV-positive OPSCC, which were investigated in this study. The heatmap data 
+included only 3 random HN samples from TCGA and hence does not represent the entire dataset. 
+By focusing on specific regions of the biopsy with Visium, we detected expression patterns that 
+are missed when analyzing the whole transcriptome in a previous study, providing a rationale for 
+why our results can detect what is not from TCGA, but may also miss those that expressed in 
+cancer types not yet included in our study.  
+ 
+cuTAR121087 identified at chr18:54606899-54607699(-) overlaps with HSALNG0121654 
+(chr18:54602792-54608331(-)) from the LncBook annotations, which are high -confidence 
+lncRNAs, obtained by adopting a set of strict criteria that considered several aspects such as 
+redundancy, background noise, mapping error, incomplete transcripts, length and coding potential. 
+It is also detected in the STOmics Melanoma sample, but with a much lower coverage (1 bin with 
+6 counts). This suggests that the lncRNA is less likely to be a false positive and that comparison 
+with bulk data might fail to confirm the detection of low -coverage lncRNAs. In the revised 
+manuscript, Fig. 3 is now moved to Fig. 2, due to the merging of the previous Fig. 1 and 2. 
+ 
+5. Line 414 mentions that 31.7% of 3' ends of fragmented transcripts captured by 10X Visium 
+were validated by ONT. Has the author analyzed why 68.3% were not detected? Are these non-
+detected lncRNAs different from the validated 31.7%, and why is such a large portion of uTARs 
+not detected? It seems a little strange. 
+On average, 10X Visium generated ~120,000 reads per spot (~130 million reads for all spots under 
+tissue), while ONT in total generated 16 -20 million reads. The ONT experiment, therefore,  
+captured only ~15% of the reads captured by Visium short-read sequencing. This could explain 
+the lower number of coding genes captured by ONT as well. For example, 12,336 coding genes 
+were detected in at least 3 spots in the head and neck cancer sample, accounting for 74% of what 
+was detected using Visium and 19.5 % of the entire annotated transcriptome. In addition, lncRNAs 
+are less abundant compared to the coding genes and so the effect of low sequencing coverage to 
+mapping lncRNA is even higher compared to detecting coding genes by ONT. 
+ 
+
+ 
+11 
+We performed an analysis to downsample the original Visium reads and compared the changes in 
+the numbers of cuTARs captured, demonstrating comparable numbers of cuTARs as provided by 
+ONT at a similar sequencing depth. This result suggested that the lack of cuTARs detected by long 
+read sequencing mainly derived from the lower sequencing coverage of the ONT experiment. 
+ 
+As described in response to Reviewer 1’s comment, to confirm the existence of uTAR/cuTARs, 
+we have performed qPCR experiments, targeting regions of the transcripts and further performed 
+Xenium in-situ experiment. Moreover, for high-throughput validation, we have conducted two 
+types of long-read sequencing experiments, with NanoPore and PacBio. We also generated new 
+data with spatial technologies that offer single-cell resolution STOmics and analysed an additional 
+Curio Seeker dataset, which confirmed the presence of 83.47% of uTARs identified using 10X 
+Visium spatial transcriptomics and scRNA-seq (Fig. 2 as explained in the response to Reviewer 
+1’s comment). The cuTARs were also overlapped with the new lncRNA annotations from 
+GENCODEv47, since the previously used reference of release was v43, which confirmed that 
+21.5% of cuTARs that were previously unannotated in GENCODE v43 are now annotated as 
+lncRNAs, highlighting that the TAR-scRNA-seq pipeline we had used for discovery is reliable 
+(Rebuttal Figure 2).      
+ 
+6. Line 506 mentions the top eight uTARs in Fig. 4a, but the figure shows only three. 
+We apologize for this oversight. We meant ‘Top 4 uTARs and top 8 pathways’. Correction has 
+been made to the text and the previous Fig. 4 (now Fig. 3 in the revised version). These results 
+show the top candidates of interest in the HNC sample that are also among the top 10 cuTARs that 
+are highly spatially co-expressed with cancer hallmark genes (Manuscript pages 9, 10; Fig. 3a). 
+ 
+7. In Case Study 1, line 693, the sample of Acral Melanoma was collected from a poor responder, 
+with cuTAR94762 downregulated post-treatment, co-localized with an eQTL SNP associated with 
+RASGRF1. Why does Fig. 6a show higher expression post-treatment? 
+Thank you for the comment, and we apologize for the confusion. cuTAR94762 is upregulated in 
+tumor cells post-treatment (Manuscript page 13). Correction has been made to the main text. Fig. 
+6 is now Fig. 5 (Manuscript page 14). 
+ 
+8. The supplementary figures lack detailed annotations, which hinders understanding. Many 
+figures also have inconsistent text sizes and unclear legends, such as in Fig. S6. 
+Thank you for the comment. We have added more detailed figure legends in the revised 
+manuscript. 
+ 
+9. It is mentioned in methods that the genome is split into non-overlapping 50bp bins, labeled as 
+transcriptionally active if at least three reads are detected in that bin. If a read just overlaps with a 
+50 bp bin, will it still be counted? 
+Thank you for the thoughtful question. Yes, such reads are still counted. To avoid the inclusion of 
+noisy signals, we filter the dataset to keep ones longer than > 200 nucleotides to qualify for 
+potential ‘long’ non-coding RNAs for further downstream analysis. This binning method has been 
+previously validated and published (Wang et al, 2023). 
+ 
+ 
+ 
+ 
+12 
+Reviewer #3: 
+Remarks to the Author: 
+Emerging evidence indicates that long noncoding RNAs (lncRNAs) play regulatory roles in gene 
+expression regulation, and their dysregulation is associated with diseases such as cancers. 
+However, owning to their low abundance, cell-type and tissue-type specific expression pattern, 
+and the limitation of unbiased detection approaches, the spatial distribution and pathophysiological 
+functions of lncRNAs are far from clear. 
+ 
+We thank the reviewer for commenting on the need to advance understanding about lncRNAs 
+using unbiased detection and considering spatial distribution and new ways to explore potential 
+functions. Our work aims to provide the research community with the firs t and most 
+comprehensive spatial expression of lncRNAs and new approaches to guide deeper exploration 
+into the association of many unannotated lncRNAs with cancer. We believe that this database 
+contributes an important resource and accompanied methods to a ccelerate understanding of 
+lncRNA in the field. 
+  
+In this manuscript, the authors have integrated 36 spatial-resolved RNA sequencing and single-
+cell sequencing data from 13 different cancers, and uncovered the spatial distribution information 
+of over 350 thousand lncRNAs at the single -cell level. Importantly, they have deposited the 
+annotation and expression data of lncRNAs (termed ‘SPanC-Lnc’) on the AWS cloud, which 
+represents the largest resource of pan-cancer annotations of lncRNAs with single-cell and spatial 
+context. By combining this information with available toolkits, the authors have identified the co-
+expression of tumor-specific lncRNAs with cancer-associated genes as well as their co-localization 
+patterns with predicted interacting proteins. In addition, they have also suggested specific cases to 
+indicate the potential application of the lncRNA spatial distribution information in analyzing the 
+responses of cancer therapy and serving as prognostic markers. 
+ 
+Overall, this manuscript has provided a useful recourse of the lncRNA spatial distribution 
+information at the single-cell resolution, which is helpful to understand the distribution features 
+and functional potential of lncRNAs in the context of cancers. Ho wever, this manuscript 
+unfortunately does not provide any novel or advanced methods for the lncRNA studies, rather is a 
+combination of existing single-cell sequencing, spatial transcriptomic sequencing, and other 
+existing methods as a dataset. It is more appropriate for a journal specialized in data resources at 
+the current stage. 
+ 
+We thank the reviewer for the comment and acknowledging the value of this database and its scale 
+as the largest and most comprehensive database of lncRNA in spatial tissue.  The reviewer’s 
+comment about advanced computational methods is valid and we apologize for not highlighting 
+this enough in the previous version. Some main novel methods that we developed in this work 
+include the method to infer the function of lncRNA using their colocalization with coding genes 
+and with histopathological annotation of the cancer tissue. This method allows us to screen for all 
+lncRNAs for potential functions at a high throughput and unbiased manner.  For example, we 
+demonstrate that many of these lncRNAs are tumor clone-specific and may have predictive value 
+in prognosis across multiple cancers. To our knowledge, no previous work has reported this 
+functional inference using spatial context, a novel approach  in the field, only made possible by 
+new technologies. In addition, other methodology innovation in our work includes integrating long 
+ 
+13 
+read sequencing spatial data with short read to gain a highly confident set of unannotated TAR, 
+and deep learning methods to predict transcript structures. We contributed a significant 
+methodological approach to build a cloud-based database where users could display the tissue 
+images, query and plot the gene expression value. The database is publicly accessible and well-
+optimized for speed through fast cloud computing environment. To our knowledge, this is among 
+the first cloud-based databases that allow querying the expression of genes on tissues across 
+multiple samples and hence we have submitted this work to Nature Methods as a Resources article. 
+ 
+Other major concerns: 
+1) Considering the low abundance of most lncRNAs at the cellular level, it is critical to evaluate 
+the reliability of signals from single-cell and special transcriptomic sequencing. How many of the 
+signals detected are false positive? How is the signals overlapping with bulk RNA sequencing? 
+How much input samples are subjected for sequencing? In Supplemental Figure 5c, the overlap of 
+different sequencing data is fairly low, does it indicate most of the signals are false positive? 
+We thank the reviewer for the constructive comment. We agree and in our initial submission, we 
+have analyzed the false-positive aspect. In the revised version, we further investigated only the 
+cuTARs that are replicated across technologies (10X Visium, scRNA-seq, long read sequencing, 
+STOmics, Curio-seeker and Xenium in situ) to be confirm that the signals are from real transcripts.  
+ 
+In Supplemental Fig. 5c, to detect consistency across technologies 3’ scRNA-seq , 5’ scRNA-seq 
+and 10X Visium, we used corresponding data from 6, 6 and 1 samples, respectively. The less 
+overlap of cuTARs across sequencing technologies could be attributed to the sequencing depth. 
+For example, 3’-scRNA-seq captured more cells and reads and hence had a higher number of 
+technology-specific cuTARs. 1,574 cuTARs were detected across all three technologies, and 7,075 
+across two technologies. On the other hand, the overlapping numbers across samples might be low 
+due to the sample-specific nature of expression of the lncRNAs and also the capture method 
+(biased to 3’ or 5’ end). 
+ 
+We further assessed the existence and expression level of cuTAR in the TCGA bulk RNA 
+sequencing dataset for 256 breast cancer samples, 473 melanoma samples and 548 head and neck 
+OPSCC samples. Overall, 58.13% of the cuTARs were detected, of which 30.86% and 17.57% 
+expressed in at least three and 10 samples, respectively. Among all the detected cuTARs, 72.72% 
+were found in the three cancer types analyzed and 19.57%, 18.68% and 9.35% were unique to 
+breast cancer, head and neck cancer and melanoma respectively and the rest were common across 
+two of the three cancers. The undetected cuTARs could be attributed by the tissue specificity in 
+the TCGA samples analyzed. Further analysis with more TCGA data from different tissues would 
+give a complete understanding of the number of cuTARs detected, but is challenging due to the 
+large data size of the whole TCGA dataset and is not within the scope of this study.  
+ 
+We acknowledge that single-cell and spatial transcriptomics data face limitations such as technical 
+dropouts. However, in the context of detecting lncRNAs, signals from bulk RNA-Seq face other 
+types of constraints, such as the lack of cell type specificity and spatial context, as we discussed in 
+the Introduction section of the manuscript. lncRNAs are not abundantly expressed and bulk RNA-
+seq might not be detected from rare cell types. They are specific to different cell populations in 
+different tissues and may be  found only in a certain proportion of cells in such populations  
+technologies (Rebuttal Fig. 6; Manuscript page 13; Supplementary Fig. 24 ). To increase 
+ 
+14 
+confidence in identifying true positives, we cross -checked our cuTARs against established 
+lncRNA databases and observed consistent detection of novel cuTARs across multiple samples, 
+including both  single cell and spatial. 
+ 
+ 
+15 
+ 
+Rebuttal Figure 6: Assessing lncRNA detection and expression specificity. a, Number of 
+cuTARs replicated in TCGA bulk RNA-Seq data in at least one, three and 10 samples. b, 
+Expression of some Melanoma specific cuTARs shown in manuscript main Figures 4, 5 in TCGA 
+
+ 
+16 
+Melanoma samples. c, Seurat clusters (left) and cell type annotations for the scRNA-Seq Acral 
+and Cutaneous melanoma dataset. d, (left) Proportion of cells in each cell type expressing three 
+melanoma tumor specific cuTARs in the scRNA-seq dataset analyzed for manuscript Fig. 5. For 
+example, cuTAR94762 is expressed in 7.6% of the Cycling Melanocyte cells. The right panel 
+indicates the representation of cuTAR expressing cells in the entire dataset. For example, 1.2% of 
+all the cells in the entire dataset are cycling melanocytes expressing cuTAR24389 and 0.6% are 
+from other non-cycling melanocytes, with an overall representation of 2.06% cells expressing the 
+cuTAR. Similarly ~6% of all cells from the dataset express cuTAR94762 and cuTAR280980. e, 
+Proportion of cells in each Seurat cluster expressing a coding gene and cuTARs. The cuTARs are 
+expressed in very low levels in few cells. f, Distribution of expression values (>2) of the coding 
+gene and the cuTARs. cuTARs are expressed in higher levels (>2) with higher median values in 
+smaller clusters, while the coding gene has the highest median in the largest cluster. This suggests 
+that cuTARs are expressed in very low levels in a low proportion in rarer cell clusters and hence 
+more likely be diluted out in bulk RNA-seq data. 
+ 
+Additional evidence strengthening the  confidence in our identified uTARs was obtained by 
+comparing the identified coding gene expression patterns using the TAR-scRNA-seq pipeline and 
+the Curio-Seeker pipeline for a breast cancer sample. We were able to ac curately detect the 
+annotated transcripts. The figure below demonstrates how well the TAR-seq pipeline used for 
+uTAR detection recapitulates the expression of annotated genes and lncRNAs as observed from 
+the standard Curio-Seeker spatial transcriptomics pipeline, serving as a positive control (Rebuttal 
+Fig. 7; Supplementary Fig. S15a, Manuscript page 7). 
+ 
+Rebuttal Figure 7: Reproducibility of the TAR -seq pipeline in detecting spatial gene 
+expression.  
+ 
+2) In Figure 1a, only one sample for each type of cancer was analyzed by scRNA-seq, which is 
+insufficient and can be biased. To conclude the pan -cancer information of lncRNAs, at least 
+triplicate samples are needed to provide a convincing dataset. 
+Thank you for the comment. In this study, we used single-cell samples from different  tissues either 
+collected and sequenced in-house or from previously published studies. Our analyses focused on 
+finding spatial patterns within a tissue or cell-type specificity, which gained statistical power from 
+
+ 
+17 
+the large number of spots/cells. From a scRNA-seq sample, thousands of cells are measured, and 
+from one transcriptomics tissue section, hundreds to thousands of spatial spots are measured. The 
+number of cells/spots in each cell type can be considered as the number of technical replicates of 
+the same cell type within a tissue, acknowledging interdependency for those from the same sample 
+for some downstream analysis types. Using these replicates, we can account for technical variation, 
+such as sequencing depth and PCR-amplification bias, when comparing clusters within the same 
+sample/tissue section. Using simulated single-cell and spatial transcriptomic data, and applying a 
+binomial detection model as implemented in scPower4, we estimated the number of cells/spots N 
+required to detect a rare population with frequency f at a desired power. Specifically, the 
+probability of observing at least k cells is given by 
+𝑃(𝑋≥𝑘)=1−*+𝑁
+𝑖.
+!"#
+$%&
+𝑓$(1−𝑓)’"$	
+Based on this model, detecting a population with f=1% at 95% power and k=3 requires 
+approximately 628 cells/spots. All datasets we used had more than >1000 spots/cells, as described 
+above and met the detection power as calculated. 
+ 
+3) In Figure 2c, how does the authors define lncRNAs conservation? Is it solely based on the 
+primary sequence similarity? Alternatively, are the structure conservation or positional 
+conservation taken into consideration? It is confusing to see the conservation score of MALAT1 
+and HOTAIR is higher than the coding RNA GAPDH and RPL5. 
+ 
+We calculated the lncRNA sequence solely based on the primary sequence. This conservation 
+score was from PhastCons5, which has been pre-computed and based on alignment and sequence 
+similarity with 30 other primates. 
+ 
+MALAT1 and HOTAIR are two top abundant lncRNAs, known to be functional and are highly 
+conserved. MALAT1 is often more abundant than most other coding genes, including GAPDH 
+and RPL5. It is therefore expected that the conservation scores of MALAT1 and HOTAI R are 
+comparable to that of coding RNA GAPDH and RPL5 
+ 
+4) In Figures 4b and 4e, and Figure 5, it is necessary to experimentally detect the co-expression 
+and co-localization of lncRNAs with corresponding cancer -associated genes and interacting 
+proteins. 
+76 cuTARs were chosen for validation with targeted probes using single cell spatial 
+transcriptomics Xenium platform to verify their cancer-type specificity as observed using 10X 
+Visium. Five genomic DNA regions around centromeres that are unlikely to transcribe into RNA 
+were chosen as a negative control set to distinguish whether the detected cuTAR signals are not 
+noise from genomic DNA, but true RNA transcripts. The sequences for probe designing were 
+selected based on performing multiple sequence alignment using ClustalW across the in-house 
+Visium, spatial long read and scRNA samples, and extracting the most represented sequences. The 
+sequences in fasta format were sent to the 10X Bioinformatics team, who applied their advanced 
+pipeline to design probes for target domains with stringent tests for off-targets (Probe design 
+provided in Supplementary Table S3). 
+ 
+ 
+18 
+We generated more data from Formalin-fixed paraffin-embedded (FFPE) tissue blocks of two 
+Head & Neck OPSCC, three melanoma, two breast cancer, four colorectal cancer and two 
+glioblastoma samples. The blocks were sectioned at a thickness of 5 μm and mounted onto Xenium 
+slides, in accordance with the FFPE Tissue Preparation Guide (10x Genomics, CG000578, Rev 
+B). In situ hybridisation was carried out overnight using 380 probes from the pre-designed Xenium 
+Immuno Oncology Panel (10x Genomics) and from the add-on custom panel of 76 cuTARs and 
+19 coding genes not represented in the base panel. DAPI staining was used to label nuclei, which 
+were used for mapping cell boundaries (10x Genomics, CG000582, Rev D). Following completion 
+of the run, H&E staining was conducted on the same tissue region. Each Xenium sample was 
+preprocessed individually using Seurat version 5.0. During the quality control (QC) step, cells with 
+zero expression across all genes were filtered out. Normalisation was performed using the 
+SCTransform function, followed by principal component analysis (PCA) using the top 30 principal 
+components. To annotate cell types for the Xenium cells, label -transfer was performed using 
+tissue-matched HN, breast , CRC, GBM publicly available scRNA -seq data with cell type 
+annotations (Manuscript 24).  
+Overall, we found that all the cuTARs tested were expressed in at least 3 cells. The signals from 
+gDNA negative control probes were much lower than that from the cuTARs, highlighting the 
+credibility of the true positive cuTAR signals (Rebuttal Fig. 8a). To verify the cancer type 
+specificity of cuTARs, we performed differential expression analysis using edgeR. The cells were 
+randomly sampled into three clusters per cancer type and were pseudo-bulked (Rebuttal Fig. 8b). 
+Further, the cancer cells and other cells in the microenvironment were annotated by using the label 
+transfer approach using published and well annotated single cell datasets of the respective cancer 
+types for H&N6 , CRC7, breast cancer8 , GBM9 and an in-house annotated scRNA-seq dataset for 
+melanoma10. The cuTARs were visualised in the samples and are seen to be specific to the tumour 
+region (red) across different cancer types (Rebuttal Fig. 8c). The co-expression patterns with 
+coding genes shown observed with the Visium data are also confirmed with this experiment and 
+are visualised. The co-expression and localisation of the breast cancer specific cuTAR215705 with 
+ELAVL1 and BIRC5 at sub-cellular level is also observed in the breast cancer samples (Rebuttal 
+Fig. 9). These results have been incorporated into the revised manuscript Fig. 5; Supplementary 
+Fig. S25; Manuscript pages 15, 16. 
+ 
+19 
+ 
+Rebuttal Figure 8: Validation of top potential functional cuTAR candidates using Xenium. a,  
+Distribution of counts of the base panel coding genes, cuTARs and gDNA negative controls. b, Cancer-
+specificity of cuTARs identified using scRNA and spatial technologies are verified in the Xenium 
+experiment where they follow consistent expression patterns. The differentially expressed cuTARs were 
+identified using edgeR. The columns in the heatmap under each cancer type represents pseudo bulked 
+clusters. c, Expression of some cancer-specific cuTARs (black dots) observed in the tumour cells (red) 
+across different cancer types. Their co-expression patterns with coding genes (yellow dots) are also verified. 
+ 
+
+ 
+20 
+ 
+ 
+Rebuttal Figure 9: Examples of functional gene analysis. Fluorescence imaging of breast cancer 
+specific cuTAR and coding genes. a, H&E staining image of the breast cancer tissues used for the Xenium 
+experiment b, co-expression of cuTAR215705 and BIRC5 c, and the gene ELAVL1 that encodes the RBP 
+HuR, which is predicted to interact with cuTAR215705 and known to interact with BIRC5. DAPI staining 
+(blue) indicates the nuclei, and ATP1A1/CD45/E-Cadherin (pink) indicates cytoplasmic staining. 
+ 
+For large-scale validation, we have already performed long-read sequencing using unfragmented 
+cDNA from the Visium experiment. We performed STOmics Stereo-seq for FFPE sample, which 
+unbiasedly detects all RNA species using random hexamers,  to get an understanding of how well 
+the detection is globally replicated. We have additionally checked the overlap with data from 
+Curio-Seeker and analyzed for co-expression. Curio-Seeker is another spatial transcriptomics 
+platform that allows profiling transcripts at single-cell resolution. It also captures all transcribed 
+sequences without the reliance on targeting probes.  As mentioned in the previous responses, 
+Curio-Seeker and STOmics confirmed the presence of 83.47% of uTARs identified using 10X 
+Visium spatial transcriptomics and scRNA-seq. For all scRNAseq datasets, we also confirmed the 
+co-expression of the lncRNA and the coding genes in each single cell. This way, the expression 
+can be robustly and comprehensively tested. Therefore, our work presents both validation 
+approaches, targeted with independent imaging and transcriptome-wide with the next generation 
+data at single cell and spatial resolution.  
+ 
+We have added a figure to show that we were able to replicate the co-expression of BIRC5 gene 
+and cuTAR25705 in breast cancer using the Curio -Seeker data and other public scRNA-seq 
+datasets where we also detected BIRC5 expression. We also show another lncRNA cuTAR32998 
+that has been annotated as uncharacterized lncRNA LOC107984223 in the latest GENCODE 
+release co-expressed with BIRC5 when the latter’s expression is low in the tissue. Survival analysis 
+using TCGA bulk RNA-seq suggested that BIRC5 and cuTAR25705 are associated with poor 
+prognosis while cuTAR32998 is associated with better survival. The patients were stratified based 
+on high or low expression of the analyzed gene/cuTARs with median expression as the cut-off. 
+This not only confirmed the detection of the cuTARs but also validated the co-expression with 
+coding genes observed in Visium (Rebuttal Fig. 10). These results have been incorporated into 
+the revised manuscript Fig. 5; Supplementary Fig. S25; Manuscript pages 15, 16. 
+
+ 
+21 
+ 
+Rebuttal Figure 10: Cross-validation using spatial single cell Curio data and Xenium for 
+melanoma and breast cancer, and analysis of prognostic value of identified cuTARs. a, Kaplan-
+Meyer survival curves for melanoma specific cuTARs indicate that the high expressing group has lower 
+survival probabilities in the SKCM (Skin Cutaneous Melanoma) TCGA dataset, while no stratification was 
+observed for these cuTARs in the HN TCGA dataset. b, Coexpression of two cuTARs with BIRC5 gene in 
+breast cancer samples. It is observed that when cuTAR215705 is expressed, cuTAR32998 is either absent 
+or expressed in low levels. This is confirmed across samples from multiple platforms such as (from left to 
+right) 10X Visium (TNBC), Xenium (ER+PR-HER2-), Curio and 10X Chromium scRNA-seq (IDC). (c) 
+cuTAR215705 is associated with poor prognosis in the TCGA breast cancer cohort while cuTAR32998 is 
+associated with better survival. 
+ 
+
+ 
+22 
+5) For lncRNAs that were suggested to indicate responses to cancer therapy and as biomarkers in 
+Figure 6, how many of them are found from previous bulk RNA sequencing? What is their 
+abundance in general and individually? Again, it is critical to evaluate whether their expression is 
+false positive. 
+Almost all the cuTARs showed signals in the TCGA data, although some showed low signals. We 
+have discussed above the multiple approaches to address the false-positive issue as presented in 
+our response to the reviewer’s Major concern 1. We checked for their consistency in detection 
+across multiple samples and multiple sequencing technologies to confirm that the signals are true. 
+For example, this has also been confirmed by our custom Xenium experiment (Rebuttal Fig. 11). 
+Briefly, the absence of cuTAR signal or very low signal in the bulk TCGA data can be explained 
+by the low abundance or by the fact that a very minor fraction of cells expressed them (as shown 
+in Rebuttal Fig. 6e). Notably, bulk sequencing generally nullifies such minor and specific signals 
+and hence the absence of signal might not necessarily mean it is a false positive signal. 
+(Manuscript Fig. 5; 14) 
+ 
+Rebuttal Figure 11: Examples of cuTARs expression detected by the Xenium validation 
+panel. Two cuTARs that show change in expression upon anti-PD1 immunotherapy, identified 
+using scRNA-seq data was validated on Xenium using custom probes. The colors of the polygons 
+represent different cell types identified and the yellow and blue dots represent captured transcripts 
+of cuTAR288960 and cuTAR94762 respectively, mostly seen in melanocytes (brown polygons). 
+ 
+Minor concerns: 
+1) The logical of the manuscript needs to polish. There are some confusions in the figures and text: 
+- Line 231, “157 uTARs were expressed on a pan -cancer level”; however, as shown in 
+Supplemental Figure 5, 210 uTARs were labeled. 
+Thank you for pointing it out. In the revised version, we have updated the figure to define a cuTAR 
+as pan-cancer only if they have been expressed in all 13 cancer types studied, and hence 47 cuTARs 
+are pan-cancer  and 1,278 are expressed in at least 10 ca ncer types (Supplementary Fig. S5, 
+Manuscript page 3). 
+ 
+- Line 235, “Supplemental Fig. 4b” appeared to be “Supplemental Fig. 5b” 
+
+ 
+23 
+The order and in-text citation of supplementary figures have been checked in the revised 
+submission.  
+- Line 262, Figure 2a, it is unable to see 95.7% of the uTARs lack the coding potential. 
+The previous figure shows the percentage of cuTARs with no coding potential for each sample, 
+while the number specified in the manuscript text is the total percentage of cuTARs with no coding 
+potential with all samples analyzed, taken into account. We have now updated the figure to show 
+coding potential of all cuTARs overall using CPAT and RNAsamba and have reframed as “98.3% 
+of the total cuTARs lack coding potential” (Manuscript Fig. 1f; Page 6). 
+ 
+- Lines 640 and 641, Figure 5c, PMEL and MLANA are not in proximal. 
+PMEL and MLANA are not proximal to each other. In Figure 5c (now Fig. 4), we have shown the 
+cuTARs that are proximal to known Melanoma associated genes. 
+ 
+2) Other mistakes: i.e. Line 477 double “we”; Line 652 LINC00589 is mislabeled to LINC0058. 
+Thank you for pointing out and we apologize. We have made the correction in the Manuscript and 
+checked throughout the text. 
+ 
+REFERENCES 
+1. Avsec, Ž. et al. AlphaGenome: advancing regulatory variant effect prediction with a unified 
+DNA sequence model. 2025.06.25.661532 Preprint at 
+https://doi.org/10.1101/2025.06.25.661532 (2025).  
+2. Wang, L. et al. Integrative genome-wide analysis of long noncoding RNAs in diverse immune 
+cell types of melanoma patients. Cancer Res 78, 4411–4423 (2018).  
+3. Iyer, M. K. et al. The landscape of long noncoding RNAs in the human transcriptome. Nat 
+Genet 47, 199–208 (2015).  
+4. Schmid, K. T. et al. scPower accelerates and optimizes the design of multi-sample single cell 
+transcriptomic studies. Nat Commun 12, 6625 (2021).  
+5. Pollard, K. S., Hubisz, M. J., Rosenbloom, K. R. & Siepel, A. Detection of nonneutral 
+substitution rates on mammalian phylogenies. Genome Res 20, 110–121 (2010).  
+6. Quah, H. S. et al. Single cell analysis in head and neck cancer reveals potential immune 
+evasion mechanisms during early metastasis. Nat Commun 14, 1680 (2023).  
+7. Pelka, K. et al. Spatially organized multicellular immune hubs in human colorectal cancer. Cell 
+184, 4734-4752.e20 (2021).  
+8. Xu, L. et al. A comprehensive single-cell breast tumor atlas defines epithelial and immune 
+heterogeneity and interactions predicting anti-PD-1 therapy response. Cell Rep Med 5, 101511 
+(2024).  
+9. Wang, X. et al. Decoding key cell sub-populations and molecular alterations in glioblastoma at 
+recurrence by single-cell analysis. Acta Neuropathologica Communications 11, 125 (2023).  
+10. Prakrithi, P. et al. Integrating 12 Spatial and Single Cell Technologies to Characterise 
+Tumour Neighbourhoods and Cellular Interactions in three Skin Cancer Types. 
+2025.07.25.666708 Preprint at https://doi.org/10.1101/2025.07.25.666708 (2025).  
+NMETH-RS57090B
+ 
+-
+ 
+Revision
+ 
+2
+ 
+ 
+Reviewer
+ 
+#1
+ 
+(Remarks
+ 
+to
+ 
+the
+ 
+Author):
+ 
+After
+ 
+revision,
+ 
+the
+ 
+manuscript
+ 
+presented
+ 
+is
+ 
+improved
+ 
+in
+ 
+rigorousness.
+ 
+However,
+ 
+it
+ 
+has
+ 
+not
+ 
+been
+ 
+improved
+ 
+in
+ 
+terms
+ 
+of
+ 
+the
+ 
+scientific
+ 
+impact
+ 
+and
+ 
+novelty.
+ 
+The
+ 
+database
+ 
+provided
+ 
+in
+ 
+this
+ 
+manuscript
+ 
+will
+ 
+be
+ 
+a
+ 
+useful
+ 
+and
+ 
+convenient
+ 
+tool
+ 
+for
+ 
+lncRNA
+ 
+researchers,
+ 
+and
+ 
+is
+ 
+more
+ 
+appropriate
+ 
+for
+ 
+a
+ 
+specialized
+ 
+journal.
+ 
+We
+ 
+developed
+ 
+this
+ 
+database
+ 
+as
+ 
+the
+ 
+first
+ 
+lncRNA
+ 
+atlas
+ 
+at
+ 
+the
+ 
+spatial
+ 
+and
+ 
+single-cell
+ 
+level
+ 
+across
+ 
+pan-cancer.
+ 
+With
+ 
+the
+ 
+spatial
+ 
+information,
+ 
+we
+ 
+demonstrated
+ 
+new
+ 
+ways
+ 
+to
+ 
+analyse
+ 
+functions
+ 
+of
+ 
+non-coding
+ 
+RNAs,
+ 
+a
+ 
+main
+ 
+challenge
+ 
+in
+ 
+the
+ 
+field
+ 
+due
+ 
+to
+ 
+these
+ 
+RNAs
+ 
+not
+ 
+coding
+ 
+a
+ 
+functional
+ 
+protein,
+ 
+based
+ 
+on
+ 
+spatial
+ 
+distribution
+ 
+with
+ 
+coding
+ 
+genes
+ 
+and
+ 
+specific
+ 
+for
+ 
+tissue
+ 
+region,
+ 
+we
+ 
+can
+ 
+infer
+ 
+the
+ 
+functions
+ 
+of
+ 
+lncRNA.
+ 
+To
+ 
+our
+ 
+knowledge,
+ 
+no
+ 
+research
+ 
+so
+ 
+far
+ 
+has
+ 
+demonstrated
+ 
+this
+ 
+approach
+ 
+that
+ 
+can
+ 
+become
+ 
+important
+ 
+tools
+ 
+for
+ 
+RNA
+ 
+research
+ 
+community.
+ 
+ 
+Reviewer
+ 
+#3
+ 
+(Remarks
+ 
+to
+ 
+the
+ 
+Author):
+ 
+This
+ 
+reviewer
+ 
+appreciates
+ 
+that
+ 
+the
+ 
+authors
+ 
+have
+ 
+made
+ 
+significant
+ 
+efforts
+ 
+to
+ 
+address
+ 
+the
+ 
+concerns
+ 
+raised
+ 
+by
+ 
+conducting
+ 
+additional
+ 
+data
+ 
+and
+ 
+analyses.
+ 
+Further
+ 
+examining
+ 
+the
+ 
+author’s
+ 
+responses
+ 
+to
+ 
+the
+ 
+comments
+ 
+from
+ 
+other
+ 
+reviewers
+ 
+highlights
+ 
+that
+ 
+they
+ 
+have
+ 
+done
+ 
+substantial
+ 
+amount
+ 
+of
+ 
+work
+ 
+to
+ 
+more
+ 
+rigorously
+ 
+assess
+ 
+the
+ 
+lncRNA
+ 
+spatial
+ 
+distribution
+ 
+and
+ 
+expression
+ 
+at
+ 
+the
+ 
+single-cell
+ 
+resolution,
+ 
+all
+ 
+of
+ 
+which
+ 
+greatly
+ 
+improve
+ 
+the
+ 
+manuscript.
+ 
+Several
+ 
+remaining
+ 
+concerns
+ 
+are
+ 
+listed
+ 
+below:
+ 
+We
+ 
+thank
+ 
+the
+ 
+reviewers.
+ 
+Their
+ 
+comments
+ 
+have
+ 
+greatly
+ 
+helped
+ 
+us
+ 
+improve
+ 
+the
+ 
+quality
+ 
+of
+ 
+this
+ 
+work.
+ 
+ 
+Major
+ 
+concerns:
+ 
+1)
+ 
+Line
+ 
+486-500
+ 
+(Figures
+ 
+S17
+ 
+&
+ 
+S18):
+ 
+As
+ 
+mentioned
+ 
+in
+ 
+the
+ 
+initial
+ 
+review,
+ 
+the
+ 
+reviewer
+ 
+still
+ 
+concerned
+ 
+that
+ 
+the
+ 
+10×Visium
+ 
+is
+ 
+more
+ 
+“sensitive”
+ 
+than
+ 
+qPCR.
+ 
+For
+ 
+instance,
+ 
+cuTAR121087
+ 
+showed
+ 
+comparable
+ 
+Ct
+ 
+values
+ 
+than
+ 
+the
+ 
+NEG1
+ 
+negative
+ 
+control
+ 
+in
+ 
+qPCR,
+ 
+but
+ 
+showed
+ 
+significant
+ 
+expression
+ 
+in
+ 
+the
+ 
+10×Visium
+ 
+data.
+ 
+The
+ 
+authors
+ 
+should
+ 
+discuss
+ 
+the
+ 
+potential
+ 
+artifacts
+ 
+that
+ 
+10×Visium
+ 
+may
+ 
+bring
+ 
+and
+ 
+how
+ 
+to
+ 
+avoid
+ 
+these
+ 
+false
+ 
+positive
+ 
+signals.
+ 
+Besides,
+ 
+the
+ 
+authors
+ 
+should
+ 
+also
+ 
+explain
+ 
+the
+ 
+possible
+ 
+reasons
+ 
+behind
+ 
+the
+ 
+heterogeneous
+ 
+expression
+ 
+trends
+ 
+of
+ 
+cuTAR100897
+ 
+between
+ 
+the
+ 
+10×Visium
+ 
+and
+ 
+qPCR
+ 
+data.
+ 
+We
+ 
+thank
+ 
+the
+ 
+reviewer
+ 
+and
+ 
+we
+ 
+added
+ 
+more
+ 
+discussion
+ 
+to
+ 
+show
+ 
+that
+ 
+qPCR
+ 
+and
+ 
+10x
+ 
+Visium
+ 
+can
+ 
+differ
+ 
+in
+ 
+their
+ 
+ability
+ 
+to
+ 
+detect
+ 
+low-abundance
+ 
+transcripts,
+ 
+in
+ 
+the
+ 
+context
+ 
+of
+ 
+low-input
+ 
+material.
+ 
+We
+ 
+clarified
+ 
+that
+ 
+the
+ 
+material
+ 
+used
+ 
+for
+ 
+qPCR
+ 
+was
+ 
+the
+ 
+remaining
+ 
+cDNA
+ 
+where
+ 
+the
+ 
+total
+ 
+cDNA
+ 
+material
+ 
+was
+ 
+used
+ 
+for
+ 
+Visium
+ 
+library
+ 
+preparation,
+ 
+so
+ 
+there
+ 
+was
+ 
+less
+ 
+input
+ 
+into
+ 
+the
+ 
+qPCR
+ 
+reaction
+ 
+compared
+ 
+to
+ 
+the
+ 
+input
+ 
+used
+ 
+for
+ 
+Visium.
+ 
+Moreover,
+ 
+multiple
+ 
+rounds
+ 
+of
+ 
+library
+ 
+PCR
+ 
+were
+ 
+applied
+ 
+during
+ 
+the
+ 
+Visium
+ 
+library
+ 
+to
+ 
+be
+ 
+sequenced,
+ 
+so
+ 
+it
+ 
+was
+ 
+likely
+ 
+that
+ 
+Visium
+ 
+sequencing
+ 
+could
+ 
+detect
+ 
+lowly
+ 
+expressed
+ 
+genes,
+ 
+conditional
+ 
+upon
+ 
+the
+ 
+template
+ 
+being
+ 
+amplified
+ 
+from
+ 
+the
+ 
+initial
+ 
+round
+ 
+of
+ 
+analysis.
+ 
+In
+ 
+addition,
+ 
+qPCR
+ 
+performed
+ 
+on
+ 
+the
+ 
+small
+ 
+amount
+ 
+of
+ 
+the
+ 
+remaining
+ 
+cDNA
+ 
+may
+  
+have
+ 
+low-abundance
+ 
+transcripts
+ 
+relatively
+ 
+under-represented
+ 
+in
+ 
+the
+ 
+pool
+ 
+of
+ 
+all
+ 
+other
+ 
+more
+ 
+abundant
+ 
+RNA,
+ 
+whereas
+ 
+Visium
+ 
+captured
+ 
+spatially
+ 
+specific
+ 
+RNA
+ 
+of
+ 
+cells
+ 
+in
+ 
+each
+ 
+spot,
+ 
+so
+ 
+the
+ 
+overall
+ 
+low
+ 
+RNA
+ 
+expression
+ 
+in
+ 
+the
+ 
+bulk
+ 
+qPCR
+ 
+experiment
+ 
+may
+ 
+still
+ 
+be
+ 
+highly-represented
+ 
+in
+ 
+the
+ 
+Visium
+ 
+spots
+ 
+where
+ 
+this
+ 
+gene
+ 
+is
+ 
+highly
+ 
+expressed
+ 
+at
+ 
+this
+ 
+spatial
+ 
+location.
+ 
+In
+ 
+addition,
+ 
+the
+ 
+qPCR
+ 
+primers
+ 
+are
+ 
+different
+ 
+from
+ 
+Visium
+ 
+gene
+ 
+detection
+ 
+probes
+ 
+in
+ 
+binding
+ 
+efficiency.
+ 
+The
+ 
+signal
+ 
+for
+ 
+cuTAR121087
+ 
+in
+ 
+Visium
+ 
+had
+ 
+consistent
+ 
+read
+ 
+coverage
+ 
+across
+ 
+multiple
+ 
+Visium
+ 
+samples
+ 
+and
+ 
+scRNA-seq
+ 
+samples
+ 
+and
+ 
+this
+ 
+uTAR
+ 
+is
+ 
+also
+ 
+detected
+ 
+in
+ 
+independent
+ 
+STOmics
+ 
+and
+ 
+TCGA
+ 
+datasets,
+ 
+and
+ 
+overlaps
+ 
+the
+ 
+most
+ 
+recent
+ 
+GENCODE
+ 
+lncRNA
+ 
+annotation
+ 
+(ENSG00000295596.1).
+ 
+These
+ 
+observations,
+ 
+therefore,
+ 
+exclude
+ 
+the
+ 
+possibility
+ 
+that
+ 
+this
+ 
+uTAR
+ 
+may
+ 
+derive
+ 
+from
+  
+Visium-specific
+ 
+artefacts
+ 
+such
+ 
+as
+ 
+ambient
+ 
+RNA
+ 
+or
+ 
+barcode/UMI
+ 
+misassignment,
+ 
+which
+ 
+typically
+ 
+produce
+ 
+diffuse,
+ 
+non-replicative,
+ 
+non-spatial
+ 
+patterns.
+ 
+ 
+Regarding
+ 
+cuTAR100897,
+ 
+the
+ 
+differing
+ 
+expression
+ 
+trends
+ 
+between
+ 
+Visium
+ 
+and
+ 
+qPCR
+ 
+likely
+ 
+arise
+ 
+from
+ 
+heterogeneous
+ 
+spatial
+ 
+distribution
+ 
+of
+ 
+expressing
+ 
+cells
+ 
+across
+ 
+tissue
+ 
+sections.
+ 
+Visium
+ 
+captures
+ 
+localized
+ 
+expression
+ 
+within
+ 
+each
+ 
+section,
+ 
+whereas
+ 
+qPCR
+ 
+reflects
+ 
+bulk-averaged
+ 
+proportion
+ 
+of
+ 
+these
+ 
+cells
+ 
+remained
+ 
+in
+ 
+the
+ 
+residual
+ 
+cDNA
+ 
+pool,
+ 
+which
+ 
+can
+ 
+also
+ 
+differ
+ 
+between
+ 
+samples.
+ 
+ 
+Thus,
+ 
+both
+ 
+discrepancies:
+ 
+the
+ 
+lack
+ 
+of
+ 
+qPCR
+ 
+detection
+ 
+for
+ 
+cuTAR121087
+ 
+and
+ 
+sample-level
+ 
+trend
+ 
+differences
+ 
+for
+ 
+cuTAR100897
+ 
+are
+ 
+consistent
+ 
+with
+ 
+a
+ 
+combination
+ 
+of
+ 
+transcript
+ 
+scarcity,
+ 
+spatial
+ 
+heterogeneity,
+ 
+primer
+ 
+specificity
+ 
+and
+ 
+efficiency,
+ 
+and
+ 
+differences
+ 
+in
+ 
+how
+ 
+each
+ 
+platform
+ 
+samples
+ 
+the
+ 
+underlying
+ 
+RNA.
+ 
+We
+ 
+have
+ 
+added
+ 
+the
+ 
+following
+ 
+discussion
+ 
+to
+ 
+Supplementary
+ 
+Note
+ 
+3
+ 
+(text
+ 
+in
+ 
+bold
+ 
+are
+ 
+new
+ 
+additions):
+ 
+ 
+All
+ 
+the
+ 
+lncRNAs
+ 
+were
+ 
+detected
+ 
+with
+ 
+the
+ 
+primers,
+ 
+except
+ 
+cuTAR121087
+ 
+which
+ 
+showed
+ 
+low
+ 
+PCR
+ 
+signal,
+ 
+although
+ 
+high
+ 
+expression
+ 
+was
+ 
+detected
+ 
+with
+ 
+Visium
+ 
+for
+ 
+the
+ 
+HNC
+ 
+sample
+ 
+and
+ 
+other
+ 
+samples
+ 
+(Supplementary
+ 
+Fig.
+ 
+17).
+ 
+cuTAR121087
+ 
+also
+ 
+showed
+ 
+detectable
+ 
+coverage
+ 
+across
+ 
+TCGA
+ 
+samples
+ 
+and
+ 
+our
+ 
+STOmics
+ 
+dataset,
+ 
+consistent
+ 
+with
+ 
+the
+ 
+region
+ 
+now
+ 
+being
+ 
+annotated
+ 
+in
+ 
+GENCODE
+ 
+(ENSG00000295596.1).
+ 
+The
+ 
+reproducible
+ 
+detection
+ 
+of
+ 
+cuTAR121087
+ 
+across
+ 
+independent,
+ 
+external
+ 
+platforms
+ 
+excludes
+ 
+the
+ 
+possibility
+ 
+of
+ 
+a
+ 
+Visium-specific
+ 
+artefact.
+ 
+The
+ 
+lack
+ 
+of
+ 
+detection
+ 
+by
+ 
+qPCR
+ 
+indicates
+ 
+that
+ 
+the
+ 
+low
+ 
+abundance
+ 
+and
+ 
+spatially
+ 
+restricted
+ 
+expression
+ 
+of
+ 
+cuTAR121087
+ 
+likely
+ 
+placed
+ 
+it
+ 
+below
+ 
+the
+ 
+detection
+ 
+threshold
+ 
+of
+ 
+qPCR
+ 
+in
+ 
+this
+ 
+experiment,
+ 
+which
+ 
+used
+ 
+a
+ 
+small
+ 
+amount
+ 
+of
+ 
+starting
+ 
+cDNA
+ 
+material
+ 
+remaining
+ 
+during
+ 
+the
+ 
+Visium
+ 
+library
+ 
+preparation
+ 
+process.
+ 
+This
+ 
+observation
+ 
+highlights
+ 
+the
+ 
+importance
+ 
+of
+ 
+designing
+ 
+and
+ 
+interpreting
+ 
+cross-platform
+ 
+validations
+ 
+before
+ 
+ruling
+ 
+out
+ 
+false
+ 
+positives.
+ 
+We
+ 
+found
+ 
+a
+ 
+generally
+ 
+consistent
+  
+trend
+ 
+of
+ 
+cuTAR
+ 
+expression
+ 
+levels
+ 
+as
+ 
+observed
+ 
+with
+ 
+the
+ 
+10x
+ 
+Visium
+ 
+data
+ 
+(Supplementary
+ 
+Fig.
+ 
+18).
+ 
+Differences
+ 
+likely
+ 
+reflect
+ 
+transcript
+ 
+scarcity,
+ 
+spatial
+ 
+heterogeneity,
+ 
+a
+ 
+small
+ 
+amount
+ 
+of
+ 
+residual
+ 
+cDNA
+ 
+available
+ 
+for
+ 
+qPCR,
+ 
+and
+ 
+potential
+ 
+variability
+ 
+in
+ 
+primer
+ 
+efficiency,
+ 
+specificity
+ 
+or
+ 
+amplification
+ 
+bias
+ 
+relative
+ 
+to
+ 
+the
+ 
+spatially-resolved
+ 
+detection
+ 
+by
+ 
+specific
+ 
+Visium
+ 
+probes.
+ 
+ 
+Minor
+ 
+concerns:
+ 
+(1).
+ 
+Line
+ 
+149:
+ 
+lncRNA
+ 
+“KCNQ1OT1”
+ 
+but
+ 
+not
+ 
+“KNCQ1OT”.
+ 
+ 
+Corrected
+ 
+in
+ 
+the
+ 
+manuscript
+ 
+and
+ 
+Fig
+ 
+S3.
+ 
+(2).
+ 
+The
+ 
+authors
+ 
+should
+ 
+clearly
+ 
+state
+ 
+the
+ 
+meaning
+ 
+represented
+ 
+by
+ 
+the
+ 
+numerical
+ 
+values
+ 
+corresponding
+ 
+to
+ 
+the
+ 
+colors
+ 
+in
+ 
+the
+ 
+figure
+ 
+legend,
+ 
+e.g.
+ 
+Figures
+ 
+4b,
+ 
+4d,
+ 
+S15,
+ 
+S17
+ 
+&
+ 
+S18.
+ 
+The
+ 
+legends
+ 
+have
+ 
+been
+ 
+elaborated
+ 
+and
+ 
+the
+ 
+figures
+ 
+have
+ 
+been
+ 
+updated
+ 
+to
+ 
+include
+ 
+a
+ 
+scale-bar
+ 
+title.
+ 
+(3)
+ 
+Figure
+ 
+S26d:
+ 
+It
+ 
+is
+ 
+recommended
+ 
+to
+ 
+label
+ 
+the
+ 
+cuTAR215705
+ 
+with
+ 
+other
+ 
+color
+ 
+to
+ 
+avoid
+ 
+potential
+ 
+misleading
+ 
+of
+ 
+merged
+ 
+signals
+ 
+of
+ 
+BIRC5
+ 
+and
+ 
+ELAVL1.
+ 
+We
+ 
+appreciate
+ 
+the
+ 
+suggestion
+ 
+and
+ 
+understand
+ 
+the
+ 
+concern
+ 
+with
+ 
+the
+ 
+colors,
+ 
+but
+ 
+best
+ 
+distinguishing
+ 
+colors
+ 
+were
+ 
+chosen.
+ 
+Clarification
+ 
+has
+ 
+been
+ 
+made
+ 
+in
+ 
+the
+ 
+legend
+ 
+to
+ 
+avoid
+ 
+misunderstanding.
+ 
+Additional
+ 
+changes:
+ 
+1.
+ 
+In
+ 
+this
+ 
+revision
+ 
+round,
+ 
+we
+ 
+performed
+ 
+an
+ 
+additional
+ 
+internal
+ 
+check
+ 
+and
+ 
+updated
+ 
+Figure
+ 
+6a
+ 
+to
+ 
+ensure
+ 
+that
+ 
+the
+ 
+pseudobulk
+ 
+analysis
+ 
+more
+ 
+accurately
+ 
+reflects
+ 
+the
+ 
+aggregation
+ 
+strategy.
+ 
+We
+ 
+confirmed
+ 
+that
+ 
+this
+ 
+update
+ 
+does
+ 
+not
+ 
+change
+ 
+any
+ 
+conclusion,
+ 
+but
+ 
+is
+ 
+introduced
+ 
+for
+ 
+technical
+ 
+perfection,
+  
+as
+ 
+described
+ 
+below.
+ 
+In
+ 
+the
+ 
+original
+ 
+version
+ 
+(Revision
+ 
+Figure
+ 
+1a
+ 
+shown
+ 
+below)
+,
+ 
+each
+ 
+column
+ 
+represented
+ 
+a
+ 
+pseudobulk
+ 
+cluster
+ 
+generated
+ 
+from
+ 
+a
+ 
+random
+ 
+subset
+ 
+of
+ 
+cells
+ 
+per
+ 
+cancer
+ 
+type.
+ 
+Because
+ 
+these
+ 
+clusters
+ 
+mixed
+ 
+cells
+ 
+originating
+ 
+from
+ 
+different
+ 
+samples,
+ 
+this
+ 
+approach
+ 
+did
+ 
+not
+ 
+fully
+ 
+account
+ 
+for
+ 
+sample-level
+ 
+variability.
+ 
+In
+ 
+the
+ 
+updated
+ 
+Figure
+ 
+6a
+ 
+with
+ 
+a
+ 
+revised
+ 
+pseudobulk
+ 
+strategy
+ 
+(Revision
+ 
+Figure
+ 
+1b)
+,
+ 
+in
+ 
+which
+ 
+each
+ 
+column
+ 
+now
+ 
+represents
+ 
+cancer
+ 
+cells
+ 
+from
+ 
+an
+ 
+individual
+ 
+sample
+ 
+profiled
+ 
+in
+ 
+the
+ 
+Xenium
+ 
+experiment.
+ 
+This
+ 
+sample-level
+ 
+pseudobulking
+ 
+is
+ 
+the
+ 
+recommended
+ 
+and
+ 
+more
+ 
+statistically
+ 
+robust
+ 
+approach,
+ 
+as
+ 
+it
+ 
+preserves
+ 
+within-sample
+ 
+structure
+ 
+and
+ 
+avoids
+ 
+confounding
+ 
+due
+ 
+to
+ 
+uneven
+ 
+sampling
+ 
+across
+ 
+donors.
+ 
+Importantly,
+ 
+the
+ 
+biological
+ 
+conclusions
+ 
+remain
+ 
+unchanged.
+ 
+The
+ 
+revised
+ 
+analysis
+ 
+shows
+ 
+similar
+ 
+trends
+ 
+in
+ 
+cuTAR
+ 
+expression
+ 
+across
+ 
+cancer
+ 
+types,
+ 
+with
+ 
+each
+ 
+cuTAR
+ 
+exhibiting
+ 
+the
+ 
+expected
+ 
+higher
+ 
+average
+ 
+fold
+ 
+change
+ 
+in
+ 
+its
+ 
+corresponding
+ 
+cancer
+ 
+type
+ 
+relative
+ 
+to
+ 
+others.
+ 
+This
+ 
+validates
+ 
+that
+ 
+the
+ 
+elevated
+ 
+expression
+ 
+patterns
+ 
+in
+ 
+specific
+ 
+cancer
+ 
+types
+ 
+are
+ 
+consistent
+ 
+with
+ 
+the
+ 
+initial
+ 
+observations
+ 
+from
+ 
+the
+ 
+Visium/scRNA-seq
+ 
+data
+ 
+and
+ 
+robust
+ 
+to
+ 
+the
+ 
+choice
+ 
+of
+ 
+pseudobulk
+ 
+strategy.
+ 
+a
+    
+ 
+ 
+ 
+b
+ 
+             
+          
+ 
+Revision
+ 
+figure
+ 
+1.
+ 
+An
+ 
+updated
+ 
+view
+ 
+of
+ 
+Figure
+ 
+6a
+ 
+in
+ 
+the
+ 
+main
+ 
+text.
+ 
+ 
+ 
+2.
+ 
+The
+ 
+PCR
+ 
+primers
+ 
+are
+ 
+added
+ 
+to
+ 
+Supplementary
+ 
+table
+ 
+S2
+ 
+and
+ 
+the
+ 
+xenium
+ 
+probes
+ 
+are
+ 
+now
+ 
+Supplementary
+ 
+table
+ 
+S3.
+ 
+ 
+3.
+ 
+We
+ 
+updated
+ 
+the
+ 
+cuTAR
+ 
+survival
+ 
+curves
+ 
+in
+ 
+Figure
+ 
+6d.
+ 
+Previously,
+ 
+the
+ 
+analysis
+ 
+included
+ 
+only
+ 
+deceased
+ 
+patients
+ 
+(n
+ 
+=
+ 
+158;
+ 
+Revision
+ 
+Fig.
+ 
+2a).
+ 
+In
+ 
+the
+ 
+revised
+ 
+version,
+ 
+we
+ 
+additionally
+ 
+included
+ 
+living
+ 
+patients
+ 
+(total
+ 
+n
+ 
+=
+ 
+246)
+ 
+and
+ 
+modeled
+ 
+survival
+ 
+using
+ 
+the
+ 
+formula
+ 
+(overall
+ 
+survival,
+ 
+status)
+ 
+~
+ 
+strata,
+ 
+which
+ 
+is
+ 
+statistically
+ 
+more
+ 
+appropriate
+ 
+for
+ 
+estimating
+ 
+survival
+ 
+probabilities
+ 
+(Revision
+ 
+Fig.
+ 
+2b).
+ 
+The
+ 
+results
+ 
+remain
+ 
+consistent
+ 
+but
+ 
+show
+ 
+stronger
+ 
+statistical
+ 
+support.
+ 
+
+Revision
+ 
+figure
+ 
+2.
+ 
+An
+ 
+updated
+ 
+view
+ 
+of
+ 
+Figure
+ 
+6d
+ 
+in
+ 
+the
+ 
+main
+ 
+text.
+ 
+ 
+ 
+4.
+ 
+Other
+ 
+minor
+ 
+typing
+ 
+errors
+ 
+and
+ 
+missed
+ 
+minor
+ 
+details
+ 
+in
+ 
+the
+ 
+methods
+ 
+have
+ 
+also
+ 
+been
+ 
+added
+ 
+upon
+ 
+thorough
+ 
+review
+ 
+ 
+ 
+All
+ 
+the
+ 
+changes
+ 
+in
+ 
+the
+ 
+main
+ 
+amd
+ 
+supplementary
+ 
+files
+ 
+have
+ 
+been
+ 
+highlighted
+ 
+in
+ 
+red
+ 
+text.
+ 
+ 
+ 

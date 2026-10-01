@@ -1,0 +1,61 @@
+{
+ "n_cell": 33524,
+ "n_gene": 34853,
+ "n_cuTAR": 1314,
+ "n_dup_names": 48,
+ "pct_cells_median": 1.0499940341248062,
+ "pct_cells_max": 38.730461758740006,
+ "n_zero_detection": 0,
+ "n_cuTAR_ge10pct_cells": 22,
+ "n_cuTAR_ge1pct_cells": 681,
+ "cell_types": [
+  "B cells",
+  "CD8+ NKT-like cells",
+  "Cycling Melanoma",
+  "Endothelial cells",
+  "Fibroblasts",
+  "Melanoma",
+  "Memory CD4+ T-cells",
+  "Memory CD8+ T-cells",
+  "Monocytes",
+  "NK cells",
+  "Unknown"
+ ],
+ "cross_platform": [
+  {
+   "pair": "BCC",
+   "n": 196,
+   "med_sc": 1.4333015153322992,
+   "med_sp": 0.30441400304414,
+   "spearman": -0.015118456597789447
+  },
+  {
+   "pair": "SCC",
+   "n": 252,
+   "med_sc": 1.4213697649445174,
+   "med_sp": 0.3394433129667346,
+   "spearman": 0.08632138114209828
+  },
+  {
+   "pair": "HNC",
+   "n": 187,
+   "med_sc": 1.5153322992482998,
+   "med_sp": 0.45871559633027525,
+   "spearman": 0.148578318205675
+  },
+  {
+   "pair": "KidneyCancer",
+   "n": 290,
+   "med_sc": 1.163345662808734,
+   "med_sp": 0.39727582292849034,
+   "spearman": 0.09934030951206521
+  },
+  {
+   "pair": "Melanoma",
+   "n": 63,
+   "med_sc": 1.8792506860756473,
+   "med_sp": 0.9630818619582664,
+   "spearman": 0.2214861751152074
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+  载入 CM_pacbio        n= 4,741  cuTAR= 1,204  最高检出率=4.22%
+  载入 CP_pacbio        n= 3,983  cuTAR= 1,411  最高检出率=3.39%
+  载入 HNC_ilong_nano   n= 1,028  cuTAR=   755  最高检出率=83.75%
+  载入 BCC_nano         n= 1,314  cuTAR= 7,240  最高检出率=57.84%
+  载入 SCC_nano         n= 1,464  cuTAR= 6,369  最高检出率=65.03%
+  载入 Melanoma         n=   623  cuTAR= 1,002  最高检出率=46.55%
+  载入 BCC              n= 1,314  cuTAR= 3,759  最高检出率=25.80%
+  载入 KidneyCancer     n= 1,762  cuTAR= 5,506  最高检出率=40.81%
+  载入 HNC              n= 1,090  cuTAR= 3,723  最高检出率=61.10%
+  载入 SCC              n= 1,473  cuTAR= 5,322  最高检出率=41.89%
+
+========================================================================================================
+U2  空间-空间 cuTAR 检出率一致性（共享特征上的 Spearman）
+========================================================================================================
+  pair                                     n共享      rho                      组别关系
+  CM_pacbio vs CP_pacbio                   530    0.454                       同平台
+  CM_pacbio vs HNC_ilong_nano              155    0.129                    跨癌种跨平台
+  CM_pacbio vs BCC_nano                    556    0.236                    跨癌种跨平台
+  CM_pacbio vs SCC_nano                    529    0.287                    跨癌种跨平台
+  CM_pacbio vs Melanoma                    154    0.187                    跨癌种跨平台
+  CM_pacbio vs BCC                         483    0.243                    跨癌种跨平台
+  CM_pacbio vs KidneyCancer                467    0.336                    跨癌种跨平台
+  CM_pacbio vs HNC                         464    0.232                    跨癌种跨平台
+  CM_pacbio vs SCC                         475    0.296                    跨癌种跨平台
+  CP_pacbio vs HNC_ilong_nano              189    0.182                    跨癌种跨平台
+  CP_pacbio vs BCC_nano                    606    0.244                    跨癌种跨平台
+  CP_pacbio vs SCC_nano                    569    0.243                    跨癌种跨平台
+  CP_pacbio vs Melanoma                    165    0.216                    跨癌种跨平台
+  CP_pacbio vs BCC                         525    0.323                    跨癌种跨平台
+  CP_pacbio vs KidneyCancer                502    0.284                    跨癌种跨平台
+  CP_pacbio vs HNC                         522    0.194                    跨癌种跨平台
+  CP_pacbio vs SCC                         505    0.180                    跨癌种跨平台
+  HNC_ilong_nano vs BCC_nano               491    0.364                       同平台
+  HNC_ilong_nano vs SCC_nano               498    0.425                       同平台
+  HNC_ilong_nano vs Melanoma                93   -0.061                    跨癌种跨平台
+  HNC_ilong_nano vs BCC                    360    0.219                    跨癌种跨平台
+  HNC_ilong_nano vs KidneyCancer           223    0.004                    跨癌种跨平台
+  HNC_ilong_nano vs HNC                    537    0.435                       同癌种
+  HNC_ilong_nano vs SCC                    439    0.208                    跨癌种跨平台
+  BCC_nano vs SCC_nano                   2,222    0.466                       同平台
+  BCC_nano vs Melanoma                     365    0.067                    跨癌种跨平台
+  BCC_nano vs BCC                        3,239    0.629                       同癌种
+  BCC_nano vs KidneyCancer               1,429    0.235                    跨癌种跨平台
+  BCC_nano vs HNC                        1,327    0.225                    跨癌种跨平台
+  BCC_nano vs SCC                        1,862    0.276                    跨癌种跨平台
+  SCC_nano vs Melanoma                     324    0.122                    跨癌种跨平台
+  SCC_nano vs BCC                        1,616    0.392                    跨癌种跨平台
+  SCC_nano vs KidneyCancer               1,174    0.217                    跨癌种跨平台
+  SCC_nano vs HNC                        1,580    0.315                    跨癌种跨平台
+  SCC_nano vs SCC                        4,134    0.647                       同癌种
+  Melanoma vs BCC                          312    0.188                       同平台
+  Melanoma vs KidneyCancer                 276    0.120                       同平台
+  Melanoma vs HNC                          240    0.133                       同平台
+  Melanoma vs SCC                          304    0.138                       同平台
+  BCC vs KidneyCancer                    1,011    0.296                       同平台
+  BCC vs HNC                             1,102    0.306                       同平台
+  BCC vs SCC                             1,523    0.393                       同平台
+  KidneyCancer vs HNC                      854    0.241                       同平台
+  KidneyCancer vs SCC                      995    0.174                       同平台
+  HNC vs SCC                             1,563    0.350                       同平台
+
+========================================================================================================
+★ 对照：空间-空间 vs 空间-单细胞
+========================================================================================================
+  空间-空间   ρ: n=45  中位 0.241  范围 -0.061 – 0.647
+  空间-单细胞 ρ: n=5  中位 0.099  范围 -0.015 – 0.221
+      Melanoma_scRNA vs BCC              n= 196  ρ=-0.015  CI=[-0.182, 0.106]
+      Melanoma_scRNA vs SCC              n= 252  ρ=0.086  CI=[-0.040, 0.206]
+      Melanoma_scRNA vs HNC              n= 187  ρ=0.149  CI=[0.018, 0.301]
+      Melanoma_scRNA vs KidneyCancer     n= 290  ρ=0.099  CI=[-0.016, 0.215]
+      Melanoma_scRNA vs Melanoma         n=  63  ρ=0.221  CI=[-0.062, 0.457]
+      同癌种            n=  3  中位 0.629  范围 0.435 – 0.647
+      同平台跨癌种         n= 14  中位 0.301  范围 0.120 – 0.466
+      跨癌种跨平台         n= 28  中位 0.229  范围 -0.061 – 0.392
+
+  判读：
+    若 空间-空间 ρ 显著高于 空间-单细胞 ρ -> 检出率是转录本在该平台上的**稳定属性**，
+       与样本（癌种）关系不大；空间检出不代表真实细胞表达频率。
+    若两者同量级 -> '跨模态不相关'可能只是样本间生物学差异，R4 的跨模态论据需要削弱。
+
+========================================================================================================
+D2（初步）  每条 cuTAR 达到 10% 检出所需的深度倍数
+========================================================================================================
+  说明：按检出率与深度近似成正比（低检出区 Poisson 捕获）估算，**是粗估**，需在正文标注。
+  matrix                  最高检出率       所需倍数         总read
+  CM_pacbio               4.22%       2.4x         8,400
+  CP_pacbio               3.39%       3.0x         9,566
+  HNC_ilong_nano         83.75%       0.1x        17,614
+  BCC_nano               57.84%       0.2x        40,982
+  SCC_nano               65.03%       0.2x        76,754
+  Melanoma               46.55%       0.2x       152,342
+  BCC                    25.80%       0.4x     5,126,045
+  KidneyCancer           40.81%       0.2x    10,594,640
+  HNC                    61.10%       0.2x    12,698,036
+  SCC                    41.89%       0.2x    13,234,549

@@ -1,0 +1,47 @@
+[
+ {
+  "tag": "SCC",
+  "pairs": 390,
+  "pct_plain": 100.0,
+  "pct_strat": 99.0,
+  "pct_torus": 100.0,
+  "n_pc": 9575,
+  "chance_overlap": 0.0104
+ },
+ {
+  "tag": "HNC",
+  "pairs": 355,
+  "pct_plain": 100.0,
+  "pct_strat": 98.9,
+  "pct_torus": 98.0,
+  "n_pc": 10271,
+  "chance_overlap": 0.0097
+ },
+ {
+  "tag": "KidneyCancer",
+  "pairs": 145,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0,
+  "pct_torus": 97.9,
+  "n_pc": 10713,
+  "chance_overlap": 0.0093
+ },
+ {
+  "tag": "BCC",
+  "pairs": 80,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0,
+  "pct_torus": 100.0,
+  "n_pc": 8828,
+  "chance_overlap": 0.0113
+ },
+ {
+  "tag": "Melanoma",
+  "pairs": 70,
+  "pct_plain": 100.0,
+  "pct_strat": 100.0,
+  "pct_torus": 57.1,
+  "n_pc": 467,
+  "chance_overlap": 0.2141
+ }
+]

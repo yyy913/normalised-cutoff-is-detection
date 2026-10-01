@@ -1,0 +1,113 @@
+{
+  "_说明": "results/figures 图件索引。供将来按名调用/重新生成时查阅。由本轮核查整理，逐项核对过生成函数与数据源。",
+  "_生成器入口": {
+    "主图": "python audit/make_fig1.py        # 只生成 Fig1_composite",
+    "其余图": "python audit/make_figures.py     # 依次生成 fig1,fig2,fig3,fig4b,fig5,fig6,figS1",
+    "图件审计": "python audit/audit_fig1.py       # 对 Fig1_composite 做几何/数值审计（导入 make_fig1.build()）"
+  },
+  "figures": [
+    {
+      "file_base": "Fig1_composite",
+      "panel_summary": "a 判据恒等成 ｜ b T_crit/T_max ｜ c 掩码随子集深度 ｜ d 三种零模型存活率",
+      "generator": "audit/make_fig1.py::build()",
+      "data_sources": ["results/RECHECK.json (a,c)", "results/TC_GAP.json (b)", "results/SELFCHECK4.json (d)"],
+      "cited_in_manuscript": true,
+      "cited_as": "Fig. 1a / 1b / 1c / 1d（正文四节各引一次）",
+      "status": "current",
+      "note": "论文唯一主图。已通过机器审计 34/34 与作者目视 4/4。修改请改 make_fig1.py 的 build()，勿直接改图。",
+      "caution": null
+    },
+    {
+      "file_base": "FigS1_non_discriminating_controls",
+      "panel_summary": "每矩阵 3 面板：稀释下随机对照 / 检出率匹配对照 / 存活 cuTAR 的 ARI",
+      "generator": "audit/make_figures.py::figS1()",
+      "data_sources": ["results/RECHECK3.json"],
+      "cited_in_manuscript": true,
+      "cited_as": "Supplementary Fig. 1（Methods『Detectability-matched controls』）",
+      "status": "current",
+      "note": "作为『试过但无判别力、故不作为论据』的诚实披露而保留。",
+      "caution": null
+    },
+    {
+      "file_base": "Fig1_resource_sparsity",
+      "panel_summary": "a 文库大小 ｜ b 矩阵稀疏度 ｜ c spot 覆盖 ｜ d 深度分布",
+      "generator": "audit/make_figures.py::fig1()",
+      "data_sources": ["results/RESOURCE_survey.json"],
+      "cited_in_manuscript": false,
+      "status": "superseded",
+      "superseded_by": "补充材料表 S1（十个空间矩阵普查）",
+      "note": "十个矩阵的资源普查四面板。内容现以表格承载。",
+      "caution": null
+    },
+    {
+      "file_base": "Fig2_detectability",
+      "panel_summary": "a cuTAR vs 注释基因检出率（混合矩阵）｜ b 按检出判据的保留率 ｜ c cuTAR 检出率上限",
+      "generator": "audit/make_figures.py::fig2()",
+      "data_sources": ["results/RESOURCE_survey.json", "results/RECHECK.json"],
+      "cited_in_manuscript": false,
+      "status": "superseded",
+      "superseded_by": "主文第六节（R5）的数字：蛋白编码 35.3–55.9% vs cuTAR 0.13–0.70%，相差 80–411 倍",
+      "note": null,
+      "caution": null
+    },
+    {
+      "file_base": "Fig3_threshold_failure",
+      "panel_summary": "a 0.5 截断低于全部 10 矩阵的最小非零值 ｜ b 低于 T_crit 无法判别 ｜ c 掩码计数随子集深度单调",
+      "generator": "audit/make_figures.py::fig3()",
+      "data_sources": ["results/RECHECK.json"],
+      "cited_in_manuscript": false,
+      "status": "superseded",
+      "superseded_by": "图 1a / 1b / 1c（三面板一一对应并入合成图）",
+      "note": "内容与 Fig1_composite 的 a/b/c 高度重叠，属『被合并』而非被否定。",
+      "caution": null
+    },
+    {
+      "file_base": "Fig4_threshold_vs_continuous",
+      "panel_summary": "a 两条路线同一数据 ｜ b 对零模型选择稳健 ｜ c \"Partners above chance\"（标注 31–38×）",
+      "generator": "audit/make_figures.py::fig4b()",
+      "data_sources": ["results/MORANS_stratified.json", "results/MORANS_conditioned.json",
+                       "results/SELFCHECK4.json", "results/RECHECK.json"],
+      "cited_in_manuscript": false,
+      "status": "partially_retracted",
+      "superseded_by": "a、b 面板 → 图 1d 与主文第五节（R4）",
+      "note": "a、b 面板可用；c 面板不可用。",
+      "caution": "【重要】c 面板『Partners above chance / 31–38×』主张的说法已被撤除，三条理由：(1) 该倍数是 top-10 伙伴名单重叠率 ÷ (10^2/N)，衡量名单保留度，**不是**伙伴强度高于随机；(2) 该面板把 top_overlap（比例 0.29–0.43）与 best_cu（Moran's I 0.09–0.17）画在同一 y 轴，量纲混画；(3) 其 best_null 出自 MORANS_conditioned.json 的 J4，每个 cuTAR 只抽 1 个匹配基因，逐 cuTAR SD 达 0.016–0.040 大于被比较差值，正负号会翻。正文已改用『匹配对照达到真 cuTAR 最佳伙伴强度的 62–105%』。若重新生成此图，**必须**先改写 make_figures.py 的 fig4b() c 面板，否则会再次产出已作废的图。"
+    },
+    {
+      "file_base": "Fig5_positive_control",
+      "panel_summary": "a 两个焦点矩阵 ｜ b 检出率差距（QQ）｜ c 同一判据两种结果（蛋白编码 vs cuTAR）",
+      "generator": "audit/make_figures.py::fig5()",
+      "data_sources": ["results/RECHECK.json"],
+      "cited_in_manuscript": false,
+      "status": "superseded",
+      "superseded_by": "主文第六节（R5）的数字",
+      "note": null,
+      "caution": null
+    },
+    {
+      "file_base": "Fig6_cross_modality",
+      "panel_summary": "a 33,524 单细胞的 cuTAR 内在可检出性 ｜ b 跨模态散点 ｜ c 头部 cuTAR 的细胞类型限制",
+      "generator": "audit/make_figures.py::fig6()",
+      "data_sources": ["results/figures/_percells.npz（缓存，由 make_figures.py::build_cache() 生成）"],
+      "cited_in_manuscript": false,
+      "status": "superseded",
+      "superseded_by": "主文第六节第二段（1.05%、22/1,314、55）+ 补充材料表 S4",
+      "note": "b 面板标题为描述性表述，不与现稿矛盾；但正文已加限定：该低相关**不能**归因于平台偏倚（spot 级与细胞级检出率是不同量纲的量，由 1-(1-p)^k 相联系）。",
+      "caution": null
+    },
+    {
+      "file_base": "Fig4_depth_robustness",
+      "panel_summary": "（每数据集 abc 三面板）",
+      "generator": "audit/make_figures.py::fig4()",
+      "data_sources": ["results/RECHECK3.json"],
+      "cited_in_manuscript": false,
+      "status": "absent",
+      "note": "该函数在 make_figures.py 中**仍定义但从未被调用**（__main__ 只调用 fig1,fig2,fig3,fig4b,fig5,fig6,figS1），文件夹中也没有该文件。属死代码，已被 fig4b 取代。",
+      "caution": null
+    }
+  ],
+  "working_files": [
+    {"file": "_percells.npz", "role": "fig6 所需的逐细胞检出缓存", "regenerate": "由 audit/make_figures.py::build_cache() 自动重建", "ship": false}
+  ],
+  "_引用核验": "『是否被正文引用』由 audit/verify_xrefs.py 核验：正文只引用 Fig. 1a–1d（→Fig1_composite）与 Supplementary Fig. 1（→FigS1_non_discriminating_controls）。"
+}

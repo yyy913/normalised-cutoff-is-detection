@@ -1,0 +1,102 @@
+{
+ "caseA": [
+  {
+   "tag": "SPanC-Lnc CM (cuTAR 子集)",
+   "n_spot": 4741,
+   "n_feat": 1204,
+   "n_all": 1204,
+   "Tmax_sub": 40.0,
+   "t_star": 5.5254529391317835,
+   "ok05": true
+  },
+  {
+   "tag": "SPanC-Lnc SCC (cuTAR 子集)",
+   "n_spot": 1473,
+   "n_feat": 5322,
+   "n_all": 23729,
+   "Tmax_sub": 380.0,
+   "t_star": 3.307464903999448,
+   "ok05": true
+  },
+  {
+   "tag": "GSE280315 P1CRC (全矩阵)",
+   "n_spot": 507684,
+   "n_feat": 16025,
+   "n_all": 18085,
+   "Tmax_sub": 880.0,
+   "t_star": 2.5147596129376812,
+   "ok05": true
+  },
+  {
+   "tag": "GSE280315 P3NAT (全矩阵)",
+   "n_spot": 487552,
+   "n_feat": 16743,
+   "n_all": 18085,
+   "Tmax_sub": 2191.0,
+   "t_star": 1.7163399139696798,
+   "ok05": true
+  },
+  {
+   "tag": "GSE225857 C1 (全矩阵)",
+   "n_spot": 2054,
+   "n_feat": 2982,
+   "n_all": 16667,
+   "Tmax_sub": 133.0,
+   "t_star": 4.333203575226563,
+   "ok05": true
+  },
+  {
+   "tag": "GSE225857 L1 (全矩阵)",
+   "n_spot": 4669,
+   "n_feat": 4973,
+   "n_all": 17331,
+   "Tmax_sub": 180.0,
+   "t_star": 4.035223439214303,
+   "ok05": true
+  }
+ ],
+ "caseB": [
+  {
+   "tag": "SPanC-Lnc CM (cuTAR 子集)",
+   "median_depth": 0.0,
+   "Tmax_full": 40.0,
+   "t_star": 5.5254529391317835,
+   "ok05": true
+  },
+  {
+   "tag": "SPanC-Lnc SCC (cuTAR 子集)",
+   "median_depth": 5493.0,
+   "Tmax_full": 46963.0,
+   "t_star": 0.19304187662004305,
+   "ok05": false
+  },
+  {
+   "tag": "GSE280315 P1CRC (全矩阵)",
+   "median_depth": 147.0,
+   "Tmax_full": 2104.0,
+   "t_star": 1.7496956816105913,
+   "ok05": true
+  },
+  {
+   "tag": "GSE280315 P3NAT (全矩阵)",
+   "median_depth": 23.0,
+   "Tmax_full": 5560.0,
+   "t_star": 1.0291054104877546,
+   "ok05": true
+  },
+  {
+   "tag": "GSE225857 C1 (全矩阵)",
+   "median_depth": 25063.0,
+   "Tmax_full": 213355.0,
+   "t_star": 0.04580498890814533,
+   "ok05": false
+  },
+  {
+   "tag": "GSE225857 L1 (全矩阵)",
+   "median_depth": 3942.0,
+   "Tmax_full": 70920.0,
+   "t_star": 0.13190853109353756,
+   "ok05": false
+  }
+ ]
+}
